@@ -1,0 +1,217 @@
+
+Cybersickness can linger long after XR exposure and compro -
+mise postural stability, hand-eye coordination, visual functioning, 
+and general well-being. These aftereffects generally result from the 
+individual’s sensorimotor adaptation to the immersive experience, 
+which is a natural and automatic response to an intersensorily 
+imperfect virtual experience and is elicited (and often resolved) by 
+the plasticity of the human nervous system, which recalibrates 
+continuously to new inputs (Stanney et al., 1998 ). It is speculated 
+that the problem is less severe in AR, as compared to VR, but that 
+assumption has yet to be fully validated.
+To discuss potential solutions for cybersickness, a special ses-
+sion was held at the 1997 Human Computer Interaction (HCI) 
+International Conference . As a result of that (largely NASA- 
+sponsored) session, a research and development (R&D) agenda 
+was formulated (Stanney et al., 1998 ). High priority recommenda -
+tions included developing an understanding of the role of sensory 
+discordance, employing human adaptation schedules, developing 
+and implementing design guidelines to minimize sensory con-
+flicts, developing standardized subjective and objective measures 
+of aftereffects to quantify the problem, establishing countermea -
+sures to sensory cue conflicts, and improving head tracking tech-
+nology and system response latency. Since that session, significant 
+advances have been made in our understanding of the causes 
+underlying cybersickness and technology facilitating XR applica -
+tions. To evaluate progress since the 1997 special session, assess the 
+current state of the field, and identify future challenges, 
+a workshop entitled Cybersickness: Causes and Solutions was con-
+vened in Los Angeles CA, at the SIGGRAPH 2019 conference 
+(Special Interest Group on Computer GRAPHics and Interactive 
+Techniques ). This paper engages the participants from that work -
+shop in formulating an updated R&D agenda, three of whom 
+participated in the development of the original 1998 agenda.
+2.Consolidation of the literature (Lawson and 
+Stanney)
+2.1. Cybersickness revisited: The rationale for this paper
+Immersive technologies, such as virtual and augmented reality, 
+initially failed to live up to inflated expectations. They have since 
+improved greatly, traveling along the popular (but hypothetical) 
+Gartner Hype Cycle of innovation (Linden & Fenn, 2003 ) and 
+emerging from the “trough of disillusionment” (p. 2), which con-
+tributed to waning interest in the 1990s. These immersive tech-
+nologies appear to be nearing the “plateau of productivity” (p. 2), 
+with mainstream adoption on the horizon. Unfortunately, cyber -
+sickness (a type of motion sickness associated with prolonged 
+immersion) remains as a common user problem that stands in 
+the way. Stanney et al. (1998 ) described key cybersickness-related 
+R&D problems that would need to be solved before VR technology 
+could live up to its potential and achieve mass adoption. This paper 
+garnered much interest, but is due for an update, as VR and AR 
+systems are now commercially available that are of acceptable quality and are more affordable than some smartphones today. 
+In fact, the time has finally come when tens of millions of XR 
+headsets have been sold worldwide, but mentions of unpleasant 
+symptoms are emerging again in the news and are regularly 
+discussed on blog posts. Therefore, it is appropriate to revisit the 
+cybersickness problems discussed by Stanney et al. (1998 ) and to 
+identify any needed modifications to the recommended R&D 
+agenda.
+2.2. Are we seeing the rebirth of XR now or merely 
+another hype cycle?
+The original Stanney et al. (1998 ) paper cited a prediction that 
+VR would be widespread by approximately 2008. It appears 
+that true dissemination did not begin until nearly a decade 
+later than predicted, but it is now fully underway. The evi-
+dence that XR is undergoing a revival derives from Google 
+Trends searches, unit sales statistics, and research publication 
+trends, which are described below.
+Google Trends searches reveal that VR interest did not rise 
+steeply until the mid-2010s (see Figure 1a screen captures 
+from trends.google.com ). Interest rose quickly following the 
+2013 introduction of the earliest developer version of the 
+Oculus Rift. For the first time, users had access to VR of 
+acceptable quality for under 500 USD which created 
+a tipping point for sales, with several competitor VR headsets 
+marketed shortly thereafter. Interest in AR was already sur-
+ging at that time and has remained strong (see Figure 1b), 
+while interest in VR has waned a bit in recent years, perhaps 
+because of consistent reports of cybersickness, and the need to 
+completely remove a user from real-world viewing. This is 
+reflected in the latest headset usage estimates, with 
+52.1 million people anticipated to use VR, as compared to 
+83.1 million anticipated to use AR at least once per month in 
+2020 (Petrock, 2020 ).
+
+2.3. Cybersickness: A continuing obstacle to XR use?
+While XR applications are no longer as limited by cost, 
+processing speed, or available software, it is possible that 
+cybersickness will limit proliferation as much as it did for 
+earlier generations of XR technology (Hale & Stanney, 2014 ), 
+unless effective countermeasures are implemented. How pre-
+valent is cybersickness with current XR? What are the symp -
+toms? What causes cybersickness and how can it be 
+mitigated? The rest of this paper considers such questions 
+and highlights important knowledge gaps requiring further 
+study. Our intent is to formulate a broad R&D agenda to 
+ensure that the initial promise of XR is realized and to ensure 
+that XR is “here to stay” as a valued aspect of training, 
+operational support, commerce, and entertainment. 
+
+2.4. User susceptibility to cybersickness
+Cybersickness incidence estimates imply that early VR headsets 
+(available ca. 1994–2010) elicited adverse symptoms among >60% 
+of users during their first exposure, with 40–100% being deemed 
+motion sick (depending on the criteria, systems, tasks, and expo -
+sure durations across five studies reviewed), 5% quitting prema -
+turely, and 5% experiencing no symptoms (Lawson, 2014 ). While 
+XR systems have begun proliferating worldwide due to their 
+affordability, cybersickness was still observed shortly after the 
+introduction of the latest generation of VR headsets, such as the 
+Oculus Rift (Serge & Moss, 2015 ). The introduction of these 
+headsets addressed some of the headset-related recommendations 
+from the Stanney et al. (1998 ) R&D agenda by creating bright, 
+low-cost head-worn displays (HWDs). Other desired headset 
+features are still lacking, however, such as a wide field-of-view 
+(FOV; current displays are still limited to ~100O) that supports 
+task performance and presence but is free from cybersickness 
+(wider FOV often increases cybersickness; Lin et al., 2002 ). Also 
+needed are untethered HWD with as much processing speed as 
+their tethered counterparts and further reduction in headset 
+weight, as extended wear can still be physically fatiguing.
+The 1998 R&D agenda also called for reduced latencies 
+(but visual latency issues persist today; see Gruen et al., 
+2020 ), establishment of cross-platform software with portabil -
+ity (which Unity, Unreal Engine, and other development plat-
+forms now support), improved tracking technology (now 
+often seamlessly integrated into the VR/AR headset technol -
+ogy itself), and creation of better haptic interfaces (tactile and 
+force feedback is still rudimentary, but hand tracking and 
+gesture recognition have been integrated into some VR/AR 
+headsets). While modern multicore processors have made it 
+possible to render complex auditory environments over head -
+phones integrated into headsets, other senses have yet to be 
+incorporated adequately (including, vestibular, chemical, or 
+non-haptic somatosensory cues such as body cutaneous and 
+kinesthetic stimuli). In fact, it is unlikely that the eXtended 
+Reality Turing Test could be passed for any XR scenarios 
+involving body locomotion or driving until natural vestibular 
+and somatosensory cues are adequately simulated (Lawson & 
+Riecke, 2014 ; Middleton et al., 1993 ). Based on these findings 
+and considerations, recommendations from the Stanney et al. 
+(1998 ) R&D agenda that should be maintained include:
+●Create a wide FOV that supports task performance and 
+presence but does not elicit cybersickness.
+●Create powerful, lightweight, and untethered AR/VR 
+HWDs.
+●Reduce visual latencies.
+●Create peripheral devices for senses beyond vision and 
+audition.
+What can we conclude about the incidence of cybersick -
+ness in newer XR? While cybersickness still occurs in the 
+present generation of VR headsets, there is very limited evi-
+dence in the literature to enable one to discern whether the incidence of cybersickness has changed versus previous gen-
+erations, and it comes from studies designed to elicit at least 
+mild symptoms. An update to VR incidence estimates comes 
+from a recent dissertation by Stone (2017 ), who observed that 
+64/195 (32.8%) of subjects playing one of the three dynamic 
+video games (for an average of 9–19 min) using an HTC 
+Vive™ (a current generation VR headset) said they “somewhat 
+agree” or “strongly agree” that the experience was nauseating 
+(with 5.6% saying “strongly agree”). Davis et al. (2015 ) pro-
+vided another incidence estimate which applies to adults 
+using an Oculus Rift and stimuli consisting of two intention -
+ally disturbing roller coaster scenarios. Under that level of 
+challenge, at least one of the two coaster simulations caused 
+12/12 participants to get mild (or worse) nausea, with 17% 
+quitting in one simulation and 66% in the other.
+Overall, the limited cybersickness findings with the latest 
+HWDs imply that: a) Cybersickness has not been eliminated 
+with the newest generation of headsets; b) As with past 
+systems, incidence of cybersickness varies greatly (due to 
+large differences in devices, stimuli, usage protocols, indivi -
+dual physiology, and measures of sickness); c) At least one- 
+third of users will experience discomfort during VR usage; d) 
+AR usage may be less problematic but more research is 
+needed to back this assertion; e) At least 5% of XR users are 
+expected to experience severe symptoms in the latest genera -
+tion headsets.
+One factor that can affect cybersickness incidence is the 
+ergonomics of the VR. The Oculus Rift VR headset such as 
+that used by Davis et al. is not expected to fit, on average, 16% 
+of females and 1% of males based on its interpupillary dis-
+tance (IPD) range of adjustment, while the Oculus Quest will 
+not fit 7% of females and 1% of males; so while the latest VR 
+headsets are closing the IPD mismatch gap, there is still room 
+for improvement. When the visual displays in a VR are not 
+positioned in front of each eye properly, normal visual accom -
+modation and binocular vision are challenged, leading to 
+perceptual distortion, eyestrain, headache, etc. While Oculus 
+is one of the most accommodating designs in terms of ergo -
+nomic fit, any person without a good IPD fit could experience 
+greater cybersickness (Stanney et al., 2020 ), and a poor fit is 
+more common among people of smaller average stature, such 
+as women. Could this be the reason that some past studies 
+have claimed that women are more susceptible to cybersick -
+ness than men? Stanney et al. (2020 ) noted that another 
+popular VR, the HTC Vive VR headset, is not expected to 
+fit, on average, ~35% of females and ~16% of males based on 
+its adjustable IPD range. This IPD fit/no-fit variable, when 
+incorporated into a predictive model of cybersickness, was 
+found to be the primary driver of cybersickness recovery 
+time, with a secondary driver being motion sickness history 
+(Stanney et al., 2020 ). Women have been reported to be more 
+susceptible to motion sickness in only 50% of the studies in 
+the literature (Lawson, 2014 ), with women being reported 
+more susceptible far less often in controlled laboratory studies 
+(versus surveys). Stanney et al. concluded that it could be the 
+ergonomics of the technology and not sex differences that 
+drive cybersickness up in females using certain types of VR. 
+Many other confounding factors contribute to observed sex 
+differences in motion sickness (Lawson, 2014 ), some of which, 1786
+ K. STANNEY ET AL. 
+like IPD, imply that not all users are experiencing the same 
+stimulus. Thus, presently, it cannot be said definitively that 
+women have been proven to be more susceptible to motion 
+sickness, nor that, when differences are observed, they are due 
+to sex, per se.
+
