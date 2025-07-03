@@ -1,0 +1,2261 @@
+International Journal of Human–Computer Interaction
+ISSN: 1044-7318 (Print) 1532-7590 (Online) Journal homepage: www.tandfonline.com/journals/hihc20
+Identifying Causes of and Solutions for
+Cybersickness in Immersive Technology:
+Reformulation of a Research and Development
+Agenda
+Kay Stanney, Ben D. Lawson, Bas Rokers, Mark Dennison, Cali Fidopiastis,
+Thomas Stoﬀregen, Séamas Weech & Jacqueline M. Fulvio
+To cite this article: Kay Stanney, Ben D. Lawson, Bas Rokers, Mark Dennison, Cali Fidopiastis,
+Thomas Stoﬀregen, Séamas Weech & Jacqueline M. Fulvio (2020) Identifying Causes of
+and Solutions for Cybersickness in Immersive Technology: Reformulation of a Research
+and Development Agenda, International Journal of Human–Computer Interaction, 36:19,
+1783-1803, DOI: 10.1080/10447318.2020.1828535
+To link to this article:  https://doi.org/10.1080/10447318.2020.1828535
+© 2020 The Author(s). Published with
+license by Taylor & Francis Group, LLC.
+Published online: 04 Nov 2020.
+Submit your article to this journal 
+Article views: 14502
+View related articles 
+View Crossmark data
+Citing articles: 97 View citing articles 
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=hihc20
+SURVEY ARTICLE
+Identifying Causes of and Solutions for Cybersickness in Immersive Technology: 
+Reformulation of a Research and Development Agenda
+Kay Stanneya, Ben D. Lawsonb, Bas Rokersc, Mark Dennisond, Cali Fidopiastisa, Thomas Stoffregene, Séamas Weechf, 
+and Jacqueline M. Fulviog
+aDesign Interactive, Inc, USA; bNaval Submarine Medical Research Laboratory, Groton, USA; cPsychology, New York University, Abu Dhabi, UAE; dU.S. 
+Army Combat Capabilities Development Command, Army Research Laboratory, USA; eSchool of Kinesiology, University of Minnesota, Minneapolis, 
+USA; fSchool of Physical and Occupational Therapy, McGill University, Montreal, Canada; gDepartment of Psychology, University of Wisconsin- 
+Madison, Madison, USA
+ABSTRACT
+Immersive technologies, such as virtual and augmented reality, initially failed to live up to expecta -
+tions, but have improved greatly, with many new head-worn displays and associated applications 
+being released over the past few years. Unfortunately, ‘cybersickness’ remains as a common user 
+problem that must be overcome if mass adoption is to be realized. This article evaluates the state of 
+research on this problem, identifies challenges that must be addressed, and formulates an updated 
+cybersickness research and development (R&D) agenda. The new agenda recommends prioritizing 
+creation of powerful, lightweight, and untethered head-worn displays, reduction of visual latencies, 
+standardization of symptom and aftereffect measurement, development of improved countermea -
+sures, and improved understanding of the magnitude of the problem and its implications for job 
+performance. Some of these priorities are unresolved problems from the original agenda which 
+should get increased attention now that immersive technologies are proliferating widely. If the 
+resulting R&D agenda is carefully executed, it should render cybersickness a challenge of the past 
+and accelerate mass adoption of immersive technologies to enhance training, performance, and 
+recreation.
+1.Introduction: Identifying causes of and solutions 
+for cybersickness: Reformulation of a research and 
+development agenda
+Virtual and augmented reality (AR) technology provides sen-
+sory input to users that often simulates real-world stimuli. 
+The approaches taken by virtual and augmented reality are 
+slightly different. Virtual reality (VR) aims to substitute vir-
+tual for real stimulation for one or more sensory organs. 
+Augmented reality, on the other hand, blends real and virtual 
+stimulation. Of course, surreal stimuli can be added to VR or 
+AR as well. In any of these cases, virtual aspects of sensory 
+input are presented with the goal of having users interact with 
+them as if they are real.
+Following industry practice, we will use the term 
+eXtended reality (XR) when we refer to the shared aspects 
+of virtual and augmented reality. eXtended Reality could 
+transform the way we work, learn, and play. Besides its 
+wide use in entertainment and gaming, XR has significant 
+applications in the domains of education, manufacturing, 
+training, health care, retail, and tourism (Stanney et al., 
+2020 ). It can transform education by permitting interaction 
+with environments far removed, long gone, or of a dramatically different scale. It provides operational sup-
+port at the point-of-need, thereby accelerating task perfor -
+mance while improving safety and reducing downtime and 
+costs. It allows for training of essential skills through safe, 
+contextually relevant, and embodied immersive experiences, 
+even in rare and hazardous scenarios, such as training oil 
+rig workers to handle emergencies or sailors to put out ship 
+fires. It can support physicians in reaching patients in 
+underserved and remote areas, and support diagnostics, 
+surgical planning, and image-guided treatment. It is des-
+tined to reshape commerce, by supporting remote explora -
+tion of physical products, enhancing remote customer 
+support, and fostering interactive branding. It can also 
+revolutionize tourism via the integration of interactive ele-
+ments into hotel experiences, augmented tourist points-of- 
+interest, and immersive navigation assistance when explor -
+ing new places.
+Despite the vast promise XR technology presents, 
+a nettlesome motion sickness (a.k.a. cybersickness) problem 
+exists (McCauley & Sharkey, 1992 ). The cybersickness asso-
+ciated with XR exposure often includes nausea, disorientation, 
+oculomotor disturbances, drowsiness (a.k.a. sopite syndrome), 
+CONTACT Kay Stanney 
+ kay@designinteractive.net 
+ Design Interactive, Inc., Orlando, FL 32789, USA 
+This article was originally published with errors, which have now been corrected in the online version. Please see Correction (http://dx.doi.org/10.1080/10447318. 
+2020.1865601 )INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+2020, VOL. 36, NO. 19, 1783–1803
+https://doi.org/10.1080/10447318.2020.1828535
+© 2020 The Author(s). Published with license by Taylor & Francis Group, LLC. 
+This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial License (http://creativecommons.org/licenses/by-nc/4.0/ ), which permits 
+unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.
+and other discomforts (Graybiel & Knepton, 1976 ; Stanney 
+et al., 2014 ). At least 5% of VR users will not be able to 
+tolerate prolonged exposure, and ~1% of users will experience 
+retching or vomiting, typically during prolonged exposure to 
+a fully immersive VR headset (Stanney et al., 2003 ; Lawson, 
+2014 ).
+Cybersickness can linger long after XR exposure and compro -
+mise postural stability, hand-eye coordination, visual functioning, 
+and general well-being. These aftereffects generally result from the 
+individual’s sensorimotor adaptation to the immersive experience, 
+which is a natural and automatic response to an intersensorily 
+imperfect virtual experience and is elicited (and often resolved) by 
+the plasticity of the human nervous system, which recalibrates 
+continuously to new inputs (Stanney et al., 1998 ). It is speculated 
+that the problem is less severe in AR, as compared to VR, but that 
+assumption has yet to be fully validated.
+To discuss potential solutions for cybersickness, a special ses-
+sion was held at the 1997 Human Computer Interaction (HCI) 
+International Conference . As a result of that (largely NASA- 
+sponsored) session, a research and development (R&D) agenda 
+was formulated (Stanney et al., 1998 ). High priority recommenda -
+tions included developing an understanding of the role of sensory 
+discordance, employing human adaptation schedules, developing 
+and implementing design guidelines to minimize sensory con-
+flicts, developing standardized subjective and objective measures 
+of aftereffects to quantify the problem, establishing countermea -
+sures to sensory cue conflicts, and improving head tracking tech-
+nology and system response latency. Since that session, significant 
+advances have been made in our understanding of the causes 
+underlying cybersickness and technology facilitating XR applica -
+tions. To evaluate progress since the 1997 special session, assess the 
+current state of the field, and identify future challenges, 
+a workshop entitled Cybersickness: Causes and Solutions was con-
+vened in Los Angeles CA, at the SIGGRAPH 2019 conference 
+(Special Interest Group on Computer GRAPHics and Interactive 
+Techniques ). This paper engages the participants from that work -
+shop in formulating an updated R&D agenda, three of whom 
+participated in the development of the original 1998 agenda.
+2.Consolidation of the literature (Lawson and 
+Stanney)
+2.1. Cybersickness revisited: The rationale for this paper
+Immersive technologies, such as virtual and augmented reality, 
+initially failed to live up to inflated expectations. They have since 
+improved greatly, traveling along the popular (but hypothetical) 
+Gartner Hype Cycle of innovation (Linden & Fenn, 2003 ) and 
+emerging from the “trough of disillusionment” (p. 2), which con-
+tributed to waning interest in the 1990s. These immersive tech-
+nologies appear to be nearing the “plateau of productivity” (p. 2), 
+with mainstream adoption on the horizon. Unfortunately, cyber -
+sickness (a type of motion sickness associated with prolonged 
+immersion) remains as a common user problem that stands in 
+the way. Stanney et al. (1998 ) described key cybersickness-related 
+R&D problems that would need to be solved before VR technology 
+could live up to its potential and achieve mass adoption. This paper 
+garnered much interest, but is due for an update, as VR and AR 
+systems are now commercially available that are of acceptable quality and are more affordable than some smartphones today. 
+In fact, the time has finally come when tens of millions of XR 
+headsets have been sold worldwide, but mentions of unpleasant 
+symptoms are emerging again in the news and are regularly 
+discussed on blog posts. Therefore, it is appropriate to revisit the 
+cybersickness problems discussed by Stanney et al. (1998 ) and to 
+identify any needed modifications to the recommended R&D 
+agenda.
+2.2. Are we seeing the rebirth of XR now or merely 
+another hype cycle?
+The original Stanney et al. (1998 ) paper cited a prediction that 
+VR would be widespread by approximately 2008. It appears 
+that true dissemination did not begin until nearly a decade 
+later than predicted, but it is now fully underway. The evi-
+dence that XR is undergoing a revival derives from Google 
+Trends searches, unit sales statistics, and research publication 
+trends, which are described below.
+Google Trends searches reveal that VR interest did not rise 
+steeply until the mid-2010s (see Figure 1a screen captures 
+from trends.google.com ). Interest rose quickly following the 
+2013 introduction of the earliest developer version of the 
+Oculus Rift. For the first time, users had access to VR of 
+acceptable quality for under 500 USD which created 
+a tipping point for sales, with several competitor VR headsets 
+marketed shortly thereafter. Interest in AR was already sur-
+ging at that time and has remained strong (see Figure 1b), 
+while interest in VR has waned a bit in recent years, perhaps 
+because of consistent reports of cybersickness, and the need to 
+completely remove a user from real-world viewing. This is 
+reflected in the latest headset usage estimates, with 
+52.1 million people anticipated to use VR, as compared to 
+83.1 million anticipated to use AR at least once per month in 
+2020 (Petrock, 2020 ).
+The Google Trends searches above are fairly consistent 
+with evidence concerning the increasing sales curve of VR 
+and AR around this same time (Dunn, 2017 ), as units num -
+bered in the millions worldwide and are projected to become 
+even more common by 2024 (see Table 1).
+The surge in general interest and sales of XR appears to 
+match the increase in studies by research and technical 
+Figure 1. Popularity of search terms “virtual reality” (1a) and “Augmented 
+Reality” (1b), Implying a resurgence of interest in VR ca. 2015 and a Growing 
+Interest in AR ca. 2011. (Peak popularity is assigned 100, 50% of this peak is 
+assigned 50, etc.).1784
+ K. STANNEY ET AL. 
+groups, as reflected by the growing number of Google Scholar 
+Articles from 1998 to 2019 focused on “virtual reality” and 
+“augmented reality” (see Figure 2).
+Considering the trends described above for Google Trends 
+searches, usage statistics, unit sales, and scholarly publica -
+tions, we can assert that the age of ubiquitous XR technology 
+finally seems to have arrived. Only time will tell if sales will 
+continue to grow as predicted (Dunn, 2017 ; IDC, 2020 ). Will 
+the years 2015–2020 someday be considered the “renaissance 
+of XR,” or merely another “hype bubble?” The answer to this 
+question will depend upon the existence of useful XR software 
+applications and alleviation of cybersickness. As was recom -
+mended in the Stanney et al. (1998 ) R&D agenda, more value- 
+added, widely adopted enterprise applications for AR and VR 
+are still needed today to ensure XR dissemination, so the 
+present authors feel this should be maintained in the current 
+updated R&D agenda:
+●Identify and evaluate value-added XR applications, both 
+personal and collaborative.●Develop value-added enterprise XR applications that 
+drive mass adoption.
+Beyond value-added applications, the authors believe that 
+one of the most important factors determining mass adop -
+tion of XR technology is cybersickness. Interest in cybersick -
+ness was high in the early 2000s (see Figure 3a), likely due to 
+VR disenchantment following the over-hyping of VR cap-
+abilities in the 1990s and a growing popular awareness of 
+how commonly cybersickness was induced (Stanney et al., 
+1998 ). Concomitant with the increasing recent XR sales and 
+usage, there has been a resurgence of interest in searches for 
+the word “cybersickness.” This trend cannot be explained by 
+a similar recent surge in interest in analogous maladies such 
+as “simulator sickness” (see Figure 3b). The authors conjec -
+ture that interest in cybersickness is surging because there 
+are far more XR users now, yet the modern XRs they use still 
+cause cybersickness. This malady must be resolved if XR 
+technology is to experience mass adoption. The updated 
+R&D agenda presented herein is intended to be a step 
+toward such resolution. The next section of this paper 
+describes the theories, probable causes, symptoms, and inci-
+dence of cybersickness associated with early and recent XR 
+technology.
+2.3. Cybersickness: A continuing obstacle to XR use?
+While XR applications are no longer as limited by cost, 
+processing speed, or available software, it is possible that 
+cybersickness will limit proliferation as much as it did for 
+earlier generations of XR technology (Hale & Stanney, 2014 ), 
+unless effective countermeasures are implemented. How pre-
+valent is cybersickness with current XR? What are the symp -
+toms? What causes cybersickness and how can it be 
+mitigated? The rest of this paper considers such questions 
+and highlights important knowledge gaps requiring further 
+study. Our intent is to formulate a broad R&D agenda to 
+ensure that the initial promise of XR is realized and to ensure 
+that XR is “here to stay” as a valued aspect of training, 
+operational support, commerce, and entertainment. We will 
+first describe the latest information concerning the incidence Table 1. XR headset sales by type.
+XR headset type 2020 units sold estimate 2024 units sold estimate
+AR 0.690 M 41.11 M
+VR 6.37 M 35.61 M
+Total 7.06 M 76.72 M
+Source: IDC Worldwide Quarterly AR and VR Headset Tracker, March 18, 2020 
+Figure 2. Google scholar articles per year from 1998–2019, showing AR closing 
+the gap with VR.
+Figure 3. Popularity of search terms “Cybersickness” (3a) and “Simulator Sickness” (3b), implying a resurgence of interest specific to Cybersickness, ca. 2015, around 
+the same time interest in XR Increased (see Figure 1, and Dunn, 2017 ). (100 = peak interest, 50 = 50% peak, etc.).INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+ 1785 
+of cybersickness, which is important in determining whether 
+it is still a problem.
+2.4. User susceptibility to cybersickness
+Cybersickness incidence estimates imply that early VR headsets 
+(available ca. 1994–2010) elicited adverse symptoms among >60% 
+of users during their first exposure, with 40–100% being deemed 
+motion sick (depending on the criteria, systems, tasks, and expo -
+sure durations across five studies reviewed), 5% quitting prema -
+turely, and 5% experiencing no symptoms (Lawson, 2014 ). While 
+XR systems have begun proliferating worldwide due to their 
+affordability, cybersickness was still observed shortly after the 
+introduction of the latest generation of VR headsets, such as the 
+Oculus Rift (Serge & Moss, 2015 ). The introduction of these 
+headsets addressed some of the headset-related recommendations 
+from the Stanney et al. (1998 ) R&D agenda by creating bright, 
+low-cost head-worn displays (HWDs). Other desired headset 
+features are still lacking, however, such as a wide field-of-view 
+(FOV; current displays are still limited to ~100O) that supports 
+task performance and presence but is free from cybersickness 
+(wider FOV often increases cybersickness; Lin et al., 2002 ). Also 
+needed are untethered HWD with as much processing speed as 
+their tethered counterparts and further reduction in headset 
+weight, as extended wear can still be physically fatiguing.
+The 1998 R&D agenda also called for reduced latencies 
+(but visual latency issues persist today; see Gruen et al., 
+2020 ), establishment of cross-platform software with portabil -
+ity (which Unity, Unreal Engine, and other development plat-
+forms now support), improved tracking technology (now 
+often seamlessly integrated into the VR/AR headset technol -
+ogy itself), and creation of better haptic interfaces (tactile and 
+force feedback is still rudimentary, but hand tracking and 
+gesture recognition have been integrated into some VR/AR 
+headsets). While modern multicore processors have made it 
+possible to render complex auditory environments over head -
+phones integrated into headsets, other senses have yet to be 
+incorporated adequately (including, vestibular, chemical, or 
+non-haptic somatosensory cues such as body cutaneous and 
+kinesthetic stimuli). In fact, it is unlikely that the eXtended 
+Reality Turing Test could be passed for any XR scenarios 
+involving body locomotion or driving until natural vestibular 
+and somatosensory cues are adequately simulated (Lawson & 
+Riecke, 2014 ; Middleton et al., 1993 ). Based on these findings 
+and considerations, recommendations from the Stanney et al. 
+(1998 ) R&D agenda that should be maintained include:
+●Create a wide FOV that supports task performance and 
+presence but does not elicit cybersickness.
+●Create powerful, lightweight, and untethered AR/VR 
+HWDs.
+●Reduce visual latencies.
+●Create peripheral devices for senses beyond vision and 
+audition.
+What can we conclude about the incidence of cybersick -
+ness in newer XR? While cybersickness still occurs in the 
+present generation of VR headsets, there is very limited evi-
+dence in the literature to enable one to discern whether the incidence of cybersickness has changed versus previous gen-
+erations, and it comes from studies designed to elicit at least 
+mild symptoms. An update to VR incidence estimates comes 
+from a recent dissertation by Stone (2017 ), who observed that 
+64/195 (32.8%) of subjects playing one of the three dynamic 
+video games (for an average of 9–19 min) using an HTC 
+Vive™ (a current generation VR headset) said they “somewhat 
+agree” or “strongly agree” that the experience was nauseating 
+(with 5.6% saying “strongly agree”). Davis et al. (2015 ) pro-
+vided another incidence estimate which applies to adults 
+using an Oculus Rift and stimuli consisting of two intention -
+ally disturbing roller coaster scenarios. Under that level of 
+challenge, at least one of the two coaster simulations caused 
+12/12 participants to get mild (or worse) nausea, with 17% 
+quitting in one simulation and 66% in the other.
+Overall, the limited cybersickness findings with the latest 
+HWDs imply that: a) Cybersickness has not been eliminated 
+with the newest generation of headsets; b) As with past 
+systems, incidence of cybersickness varies greatly (due to 
+large differences in devices, stimuli, usage protocols, indivi -
+dual physiology, and measures of sickness); c) At least one- 
+third of users will experience discomfort during VR usage; d) 
+AR usage may be less problematic but more research is 
+needed to back this assertion; e) At least 5% of XR users are 
+expected to experience severe symptoms in the latest genera -
+tion headsets.
+One factor that can affect cybersickness incidence is the 
+ergonomics of the VR. The Oculus Rift VR headset such as 
+that used by Davis et al. is not expected to fit, on average, 16% 
+of females and 1% of males based on its interpupillary dis-
+tance (IPD) range of adjustment, while the Oculus Quest will 
+not fit 7% of females and 1% of males; so while the latest VR 
+headsets are closing the IPD mismatch gap, there is still room 
+for improvement. When the visual displays in a VR are not 
+positioned in front of each eye properly, normal visual accom -
+modation and binocular vision are challenged, leading to 
+perceptual distortion, eyestrain, headache, etc. While Oculus 
+is one of the most accommodating designs in terms of ergo -
+nomic fit, any person without a good IPD fit could experience 
+greater cybersickness (Stanney et al., 2020 ), and a poor fit is 
+more common among people of smaller average stature, such 
+as women. Could this be the reason that some past studies 
+have claimed that women are more susceptible to cybersick -
+ness than men? Stanney et al. (2020 ) noted that another 
+popular VR, the HTC Vive VR headset, is not expected to 
+fit, on average, ~35% of females and ~16% of males based on 
+its adjustable IPD range. This IPD fit/no-fit variable, when 
+incorporated into a predictive model of cybersickness, was 
+found to be the primary driver of cybersickness recovery 
+time, with a secondary driver being motion sickness history 
+(Stanney et al., 2020 ). Women have been reported to be more 
+susceptible to motion sickness in only 50% of the studies in 
+the literature (Lawson, 2014 ), with women being reported 
+more susceptible far less often in controlled laboratory studies 
+(versus surveys). Stanney et al. concluded that it could be the 
+ergonomics of the technology and not sex differences that 
+drive cybersickness up in females using certain types of VR. 
+Many other confounding factors contribute to observed sex 
+differences in motion sickness (Lawson, 2014 ), some of which, 1786
+ K. STANNEY ET AL. 
+like IPD, imply that not all users are experiencing the same 
+stimulus. Thus, presently, it cannot be said definitively that 
+women have been proven to be more susceptible to motion 
+sickness, nor that, when differences are observed, they are due 
+to sex, per se.
+Based on the findings in this section, important considera -
+tions in the Stanney et al. (1998 ) R&D agenda that should be 
+maintained in the current recommendations include:
+●Determine the various drivers of cybersickness and cre-
+ate a predictive model.
+●Establish means of determining user susceptibility to 
+cybersickness and aftereffects.
+●Establish countermeasures to aftereffects.
+●Identify factors that contribute to how provocative XR 
+content is, and determine their relative weightings.
+There is a general belief that AR HWDs will not have the 
+same level of physiological adverse impact on users compared 
+to VR; however, there are limited data to back this assertion. 
+The evidence available comes from Vovk, Wild, Guest, and 
+Kuula (2018 ), who claimed AR engenders negligible cyber -
+sickness, yet they excluded a relatively large number (>15%) 
+of outliers in their data. Hughes et al. (2020 ) found 
+a Simulator Sickness Questionnaire (SSQ) symptom profile 
+of Oculomotor > Disorientation > Nausea (O > D > N) in 
+a current generation immersive AR headset (Microsoft 
+HoloLens 1), with an average Total sickness SSQ score of 
+23.69 (S.D. = 21.73) immediately following 3–40 min expo -
+sures with 30 min breaks between sessions, which puts AR 
+firmly in the “Medium” intensity range (75th percentile) 
+based on VR system SSQ percentiles (Stanney et al., 2014 ). 
+With VR systems, a Total SSQ > 20.1 is generally associated 
+with adverse physiological effects (e.g., ataxia, degraded hand- 
+eye coordination, VOR shifts) and dropouts (users quitting). 
+As an augmentation to symptom measures such as the SSQ, 
+physiological measures of adverse aftereffects should be 
+explored with long-duration AR exposure, to determine if 
+there is a similar adverse physiological impact and whether 
+this is associated with dropouts. Finally, usage protocols 
+should be explored further, such as in Hughes et al. (2020 ), 
+who found that when a usage protocol of 6–20 min AR 
+sessions with 30 min breaks between sessions was employed, 
+the average Total SSQ score dropped to 15.71 (S.D. = 10.4) 
+immediately post-exposure, which is approaching the “Low” 
+range (25th percentile; Stanney et al., 2014 ). Based on these 
+findings, important considerations that were part of the 
+Stanney et al. (1998 ) R&D agenda that should be maintained 
+include:
+●Standardize subjective and objective measurement of 
+aftereffects. If possible, on-line measurement approaches 
+should be established that are integrated into XR systems.
+●Establish product acceptance criteria and systems 
+administration protocols to ensure that cybersickness 
+and aftereffects are minimized.2.5. Etiological hypotheses
+The Stanney et al. (1998 ) R&D agenda identified the need to 
+develop a better theoretical understanding of cybersickness 
+in terms of sensory discordance and human adaptation time -
+lines. This has yet to be fully achieved. While the facts for 
+which a complete motion sickness theory must account have 
+been stipulated (Lawson, 2014 ), there are many knowledge 
+gaps concerning causes of cybersickness and no definitive, 
+universally accepted theory. For this reason, the term 
+“hypothesis” was used throughout this paper to refer to the 
+competing schools-of-thought on cybersickness, with a focus 
+on identifying practical recommendations that can be 
+derived from each one. Specifically, three widely known 
+hypotheses and one new one are introduced briefly, below, 
+with an emphasis on their contributions to the updated R&D 
+agenda and implications for cybersickness mitigation 
+expounded. However, the reader should be aware of other 
+important hypotheses concerning motion sickness, which 
+have emphasized the role of eye movements, rest frames, 
+perceived vertical, and ontological development of motor 
+control – a critical review of more than ten motion sickness 
+hypotheses (or variants of hypotheses) is provided by 
+Keshavarz et al. (2014 ). Four examples of hypotheses are 
+provided below.
+Sensory conflict hypothesis . The sensory conflict (or neural 
+mismatch) hypothesis of motion sickness, which is the most 
+widely cited, postulates that motion sickness is due to sensory 
+conflicts between expected patterns of afferent/reafferent sig-
+nals from visual, auditory, tactile, kinesthetic, and vestibular 
+activity established through previous experiences and what is 
+being experienced in a novel environment (Oman, 1998 ; 
+Reason & Brand, 1975 ). For example, there can be 
+a mismatch between what the proprioceptive (tactile, kines -
+thetic, vestibular) senses indicate is happening in the real 
+world (e.g., sitting still in a chair while wearing a VR headset), 
+versus what the visual and auditory senses are indicating in 
+the virtual world (e.g., accelerating through a virtual environ -
+ment), which causes a perceptual conflict that is often sick-
+ness-inducing. The visual contributors to this mismatch are 
+not as profound in AR because AR typically allows for view -
+ing of real-world rest frames, such as walls, floors, etc., which 
+is one reason AR systems tend to elicit less overt nausea than 
+VR systems. Potential limitations of the sensory conflict 
+hypothesis are described in the Ecological Hypothesis section 
+of this paper and in detail in Keshavarz and Hecht (2014 ).
+Evolutionary hypothesis . The evolutionary (or poison) 
+hypothesis is an expansion of the sensory conflict hypothesis, 
+which seeks to explain the origins of the most cardinal symp -
+toms of the motion sickness response (viz., nausea and vomit -
+ing) (Money, 1990 ; Treisman, 1977 ). This is a hypothesis 
+concerning the origin of motion sickness rather than the 
+specific aspects of a stimulus immediately causing motion 
+sickness. The hypothesis is that nausea and vomiting due to 
+sensory cue conflicts are an indirect by-product of an ancient 
+evolutionary adaptation poison defense system that is being 
+accidentally triggered by modern challenging situations of real 
+or apparent motion (the latter of which is prevalent in XR INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+ 1787 
+systems). The brain has evolved in such a way that it mistakes 
+modern real/apparent motion stimuli causing disorganization 
+to typical patterns of vestibular, visual, and somatosensory 
+information as instead representing a natural toxin-related 
+malfunction in the central nervous system (CNS), which initi-
+ates an emetic response as a defense mechanism.
+Oman (2012 ) has pondered whether the evolutionary 
+hypothesis is an overly “adaptationist” explanation for cyber -
+sickness, as it assumes “that evolution has shaped all pheno -
+typic traits for survival advantage” (Oman, 2012 , p. 117). The 
+key assumptions of the evolutionary hypothesis were recently 
+challenged by Lawson (2014 ) who argued (in the direct evolu -
+tionary hypothesis ) that there are plausible means by which 
+ancient forms of real or apparent motion could have contrib -
+uted directly to the evolution of aversive reactions (without 
+the need for a co-opted poison response). Extending this idea, 
+Lawson offered a modification of Triesman’s poison hypoth -
+esis (the direct poison hypothesis) , which argues that the evo-
+lutionary circumstances that caused the ingestion of toxins or 
+intoxicants were the same circumstances in which unusual, 
+maladaptive motions of ancient origin frequently were pre-
+sent. Therefore, the human motion sickness response did not 
+have to evolve accidentally by generalizing a poison response 
+to modern motions, but could have evolved directly, because 
+the ancient circumstances under which our primate ancestors 
+could become poisoned (or intoxicated) also were circum -
+stances which harmed their evolutionary fitness directly dur-
+ing natural conditions of real-body motion and/or visual-field 
+motion.
+Ecological hypothesis . Under the ecological hypothesis 
+(also known as the postural instability hypothesis ), motion 
+sickness is postulated to be caused by alterations of pos-
+tural control (Riccio & Stoffregen, 1991 ). This hypothesis 
+suggests that a primary behavioral goal of humans is to 
+maintain postural stability, and thus as postural instability 
+increases, motion sickness develops. Postural instability is 
+suggested to occur in novel environments in which “we fail 
+to perceive the new dynamics or … are unable to … 
+execute the control actions that are appropriate for the 
+new dynamics” (Riccio & Stoffregen, 1991 , p. 204); it lasts 
+until the individual can adapt to the novel motion cues. As 
+with sensory conflict hypothesis, potential limitations of 
+the ecological hypothesis or related findings have been 
+raised (Bos, 2011 ; Golding & Gresty, 2005 ; Keshavarz 
+et al., 2014 ; Lackner, 2014 ; Lubeck et al., 2015 ; Pettijohn 
+et al., 2018 ).
+Multisensory re-weighting hypothesis . Another expansion of 
+the sensory conflict hypothesis is the multisensory reweighting 
+hypothesis , which suggests that susceptibility to cybersickness 
+may be associated with an individual’s ability to rapidly 
+reweight (Oman, 1990 ) conflicting multisensory cues in XR 
+environments, such as visual-vestibular mismatches 
+(Gallagher & Ferrè, 2018 ). Whereas in the real world, vestib -
+ular cues are highly weighted, due to their lack of validity in 
+immersive environments, vestibular cues must be down- 
+weighted to resolve sensory conflicts, which are most pro-
+nounced in fully immersive VR headsets. Those who can 
+rapidly adapt to these conflicts, for example, by upregulating 
+visual cues relative to conflicting vestibular cues that do not contribute to useful estimates of the physical body while 
+immersed in the virtual world, will experience a mild form 
+of inoculation to cybersickness with repeat exposure to XR. 
+Thus, individual multisensory reweighting speed may factor 
+into the degree to which an individual experiences 
+cybersickness.
+Each one of these hypotheses, and their contributions to 
+the updated R&D agenda, will now be discussed in more 
+detail. The reader will note that there is a diverse range of 
+opinions and approaches among the named section authors 
+discussing this dynamic field of inquiry.
+3.Sensory cue conflict and cybersickness (Fulvio and 
+Rokers)
+The sensory conflict hypothesis of motion sickness attributes 
+cybersickness to conflicts between expected sensory cues 
+established through previous experiences and those currently 
+being experienced in a novel environment (Oman, 1998 ; 
+Reason & Brand, 1975 ). In particular, conflicts between ves-
+tibular and visual motion cues, prominent in VR systems, 
+appear to be particularly troublesome. It is known that indi-
+viduals vary in their sensitivity to such sensory cues. 
+Specifically, individuals show considerable variability in 
+cybersickness propensity and severity – some individuals can 
+tolerate only very brief exposure to XR (minutes or less), 
+whereas others seem limitless in their tolerance (hours). This 
+range of cybersickness susceptibility suggests that there are 
+other characteristics that also vary among individuals and 
+relate to cybersickness. Their identification can make it easier 
+to predict in advance who will be likely to experience dis-
+comfort when using XR, and, more importantly, to develop 
+solutions that mitigate the effects. We thus tested the a priori 
+prediction that individuals with greater sensitivity to sensory 
+cues will be more likely to detect sensory conflicts when 
+placed in XR environments, and will therefore be more sus-
+ceptible to cybersickness. As such, individual differences in 
+cue sensitivity should predict differences in cybersickness 
+susceptibility.
+A large sample of undergraduate students (n = 95; 59 
+females), most of whom had little to no experience with VR 
+devices, completed a two-part study in which they were first 
+measured for their sensitivity to different sensory cues to 
+motion-in-depth presented in a VR HWD, and then sepa -
+rately measured for their propensity for cybersickness while 
+viewing video content in the same VR display. Finally, the 
+relationship between the two measures for the different sen-
+sory cues was quantified in order to (i) test the prediction that 
+greater sensitivity to sensory cues is associated with more 
+severe cybersickness; and to (ii) determine which sensory 
+cues in particular are sickness-inducing.
+Sensitivity to sensory cues was measured using a dot 
+motion direction discrimination task viewed in a VR HWD 
+(see Figure 4a). Sensitivity to 3D motion defined by four sets 
+of sensory cues was tested (see Figure 4b). One type of 3D 
+motion was defined by binocular cues only. This Binocular 
+motion was presented as a cloud of dots to both eyes such that 
+when viewed in the VR display, a single cloud of dots 
+appeared to be moving toward or away from the participant 1788
+ K. STANNEY ET AL. 
+on each trial, within the context of a larger virtual room. 
+Importantly, monocular information (dot size and density 
+changes) was removed from this stimulus. A second type of 
+3D motion was defined by monocular cues only. This 
+Monocular motion was presented as a cloud of dots to only 
+one eye within the same virtual room on each trial, with the 
+other eye viewing only the virtual room. Thus, binocular 
+information was removed so that the motion direction of 
+the dots (toward or away) was defined by the dot size and 
+density changes in the single eye’s view. A third type of 3D 
+motion included both binocular and monocular cues – 
+Combined Cue Motion – thus presenting the motion with 
+dot size and density changes to both eyes within the virtual 
+room. Finally, the fourth type of 3D motion included bino -
+cular, monocular, and motion parallax cues due to head- 
+motion contingent updating of the VR display – Full VR 
+Motion. The motion was presented in the same way as the 
+combined cues motion, but the viewpoint of the scene chan -
+ged according to participants’ head movements.
+The four types of dot motion were presented in blocks and 
+the order of the blocks was random and counterbalanced 
+across participants. Within a block, the dots had different 
+coherence levels, such that lower coherence values made dis-
+crimination of dot motion direction more difficult. Individual 
+sensitivity to the individual sensory cue conditions was 
+defined as the slope of the psychometric curve fit to 
+a participant’s data across all motion coherence values – larger 
+slopes implied greater sensitivity (see Figure 4c). As expected, 
+large variability in sensitivity was found across participants for 
+any given sensory cue condition, as well as variability across sensory cue conditions (see Figure 4d). Not surprisingly, 
+sensitivity was greater when more cues to 3D motion were 
+available (i.e., compare “Combined cues” and “Full VR” to 
+“Binocular” and “Monocular”).
+The critical question, however, is whether these differences 
+in sensitivity relate to and predict differences in cybersickness. 
+Cybersickness propensity was measured in a separate task in 
+which the same participants viewed up to 22.5 min of bino -
+cular, head-fixed video content that increased in intensity. 
+The video content included footage of a first-person car 
+ride, computer-generated video footage of a first-person 
+fighter jet flight through a canyon, footage of a first-person 
+drone flight through a parking lot, and footage of a first- 
+person drone flight around a bridge. Participants had the 
+option of quitting if viewing became intolerable. Both prior 
+to and after viewing the videos, participants completed the 16- 
+item SSQ (Kennedy et al., 1993 ). Cybersickness propensity/ 
+severity was quantified by the difference in the total sickness 
+score between post- and pre-video viewing.
+The video footage was intended to be sickness-inducing to 
+allow for a range of sickness across individuals. Indeed, the 
+video footage led to significant sickness on average compared 
+to baseline, but across individuals, there was considerable 
+variability in severity (see Figure 5a). Critically, when indivi -
+dual sensitivity in each of the four sensory cue conditions was 
+related to the change in cybersickness due to video-viewing, 
+trends were uncovered of the expected relationship whereby 
+larger sensitivity was associated with greater sickness in all 
+conditions, but only in the Full VR sensory cue condition was 
+the relationship significant after correcting for multiple 
+Figure 4. Assessing the sensitivity to motion in depth under different cue conditions* (Adapted from Fulvio, Ji, & Rokers, 2020 ). * a) Observers viewed random dot 
+motion stimuli in an Oculus DK2 head-mounted display (HMD). The stimuli simulated dots that moved toward or away from the observer through a cylindrical 
+volume. The proportion of signal dots (coherence), which moved coherently either toward or away, and noise dots, which moved randomly through the volume, was 
+varied in a random, counterbalanced order across trials. Observers reported the perceived motion direction. Stimuli were presented in a virtual environment that 
+consisted of a room (the insert depicts a “zoomed out” view) with a 1/f noise-patterned plane located 1.2 m from the observer. b) Dot motion was defined by one of 
+four sets of sensory cues, presented in a randomized blocked order. Binocular dot motion contained binocular cues to depth (i.e., changing disparity, inter-ocular 
+velocity), but lacked monocular cues to depth (i.e., dot density and size changes). Monocular dot motion contained monocular cues to depth but lacked binocular 
+cues. Combined cues dot motion contained both binocular and monocular cues. Full VR dot motion contained binocular and monocular cues and motion parallax 
+cues associated with head-motion contingent updating of the display. c) Psychometric functions were fit to the percentage of “toward” responses at each motion 
+coherence level to obtain the slope (σ) of the fit for each observer in each cueing condition. Sensitivity in each cueing condition was defined as the inverse of the 
+slope, with larger values indicating greater sensitivity. d) Histograms of the distribution of sensitivities across observers in each of the four cueing conditions reveal 
+considerable variability both within and across conditions. Sensitivity tends to be greater in combined cue conditions compared to when cues are presented in 
+isolation.INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+ 1789 
+comparisons (see Figure 5b). It is noted that the Full VR 
+sensory cue set is the only one of the four that includes 
+motion parallax. Moreover, the video footage was head- 
+fixed – it did not update according to the participants’ head 
+movements – and therefore lacked motion parallax cues. 
+Further, head movements made during the video viewing 
+created conflicts with movements implied by the footage itself.
+Taken together, the specificity of the relationship 
+between sensitivity to the Full VR condition and cybersick -
+ness and the potential for motion parallax-related conflict 
+during video viewing implicate sensitivity to motion paral -
+lax cues as an important predictor of cybersickness . As 
+predicted, those individuals who had greater sensitivity to 
+motion parallax information experienced greater discomfort 
+when that information was absent or in conflict. Future 
+work can test other XR applications to determine how 
+sensitivity to different cues may impact cybersickness 
+under various scenarios. For those sensitive to cue conflicts, 
+design techniques can be employed to attempt to minimize 
+sensory conflicts and thus reduce cybersickness, such as 
+teleportation, concordant motion, alignment of head/body 
+with virtual motion, speed modification, and provision of 
+visual cues that match or minimize vestibular cues 
+(Bowman et al., 1998 ; Carnegie & Rhee, 2015 ; Dennison 
+& D’Zmura, 2017 ; Fernandes & Feiner, 2016 ; Keshavarz, 
+Hecht, & Lawson, 2014 ; Kuiper et al., 2019 ; Prothero & 
+Parker, 2003 ; Wada et al., 2012 ).
+Based on this review, an important consideration that was 
+part of the Stanney et al. (1998 ) R&D agenda that should be 
+maintained includes:●Establish XR content design guidelines that assist in 
+mitigating cybersickness.
+In addition, important considerations to add to the updated 
+R&D agenda include:
+●Determine feasibility of testing an individual’s sensitivity 
+to sensory depth cues and determine if such sensitivity is 
+associated with more severe cybersickness.
+●Determine which sensory cues, beyond motion parallax, 
+are sickness-inducing.
+In conclusion, the primary outcome of this sensory con-
+flict-based research may seem problematic for XR – those 
+who would derive the best experiences from XR would also 
+be those who could tolerate the experience the least. However, 
+the results suggest possible solutions. Ideas for cybersickness 
+mitigation are summarized in Table 2, based upon the impli -
+cations from a variety of theoretical approaches to the pro-
+blem, which are described in this paper, including sensory/cue 
+conflict (this Section 3), the evolutionary hypothesis (the next 
+Section 4), the ecological hypothesis (Section 5), and the 
+multisensory re-weighting hypothesis (Section 6). We turn 
+next to the implications of the evolutionary approach.
+4.Evolutionary hypothesis: Implications of human- 
+system adaptation to cybersickness (Fidopiastis and 
+Stanney)
+The evolutionary hypothesis implies that the brain recognizes 
+certain sensorimotor conflicts as toxins that must be expelled. 
+Such conflicts may occur during integration of vergence- 
+accommodation, visual-vestibular, or visual-vestibulo- 
+somatosensory (tactile/kinesthetic) information while using 
+XR headsets. Specifically, donning an HWD in an XR envir -
+onment with limited FOV, optical distortions, static projec -
+tion depth planes, and certain types of sustained active 
+motions are expected to present conflicts that elicit cybersick -
+ness with associated maladaptation in visual, vestibular, or 
+psychomotor systems (e.g., changes in accommodation, ver-
+gence, vestibulo-ocular reflex [VOR], ataxia, or maladroit 
+hand-eye coordination). Since “the evolutionary function of 
+the human brain is to process information in ways that lead to 
+adaptive behavior” (Cosmides & Tooby, 1987 , p. 282), and 
+maladaptive behaviors associated with XR exposure could be 
+harmful, XR systems should be designed such that human 
+sensorineural mechanisms associated with discordance are 
+minimized; otherwise cybersickness and associated potentially 
+harmful maladaptation may manifest.
+When an XR experience sufficiently perturbs perceptual 
+cues within virtual or augmented operational environments 
+that define the nature of the world and indicate how to per-
+form actions, cybersickness will occur (Kruijff et al., 2010 ; 
+Welch & Mohler, 2014 ). Thus, cybersickness is not predicted 
+as a result of all intersensory conflict conditions. Furthermore, 
+those individuals who can quickly adapt their sensorimotor 
+responses to XR environments may avoid sickness altogether 
+Figure 5. Sensory cue sensitivity predicts cybersickness severity* (Adapted from 
+Fulvio, Ji, & Rokers, 2020 ). * a) After viewing binocular, head-fixed video content 
+in the VR HMD, observers reported significantly greater levels of cybersickness 
+compared to baseline reports obtained at the beginning of the study. However, 
+sickness-inducing effects of the video content were highly-variable among 
+observers, with some individuals appearing to be relatively immune to cyber -
+sickness. b) Change in motion sickness as a function of sensory cue sensitivity. 
+Observers’ sensitivity to the Full VR dot motion predicted their susceptibility to 
+cybersickness with video viewing. The relationship was not significant in the 
+other cue conditions. This suggests that sensitivity to motion parallax cues in 
+particular is an important factor susceptibility to cybersickness.1790
+ K. STANNEY ET AL. 
+(McCauley & Sharkey, 1992 ). Characterizing sensory conflicts 
+that lead to cybersickness is complex given the myriad of ways 
+that XR technology, coupled with computer graphics techni -
+ques, negatively impact human intersensory and sensorimotor 
+integration. XR technology thus redefines human perception 
+of the natural world and perturbs multimodal cues that assist 
+with visuomotor coordination (Welch & Mohler, 2014 ). 
+Nonetheless, human perceptual and sensorimotor systems 
+are dynamic and allow humans to adapt to such diverse 
+rearrangements of spatial information (Welch, 1986 ).
+Adaptation as a process can be quick, as in visual coding 
+(Webster, 2015 ), or more gradual, as in the outcome or end 
+state of the adaptation (Welch, 1978 ). Most research evaluat -
+ing effects of adaptation associated with XR exposure are end- 
+state results that quantify prolonged changes (i.e., aftereffects) 
+in perception or shifts in perceptual motor coordination that 
+reduce or eliminate inter-sensory conflicts (Stanney & 
+Kennedy, 1998 ; Stanney et al., 1999 ). Yet, reducing the adap -
+tation process to only a hierarchical sensory loop may be why 
+there are conflicting theories as to how best to use adaptation 
+as a mitigation for cybersickness.
+Functional magnetic resonance imaging (fMRI) of persons 
+experiencing adaptation when wearing prism glasses provides 
+information on how the brain changes in response to inter -
+sensory conflicts induced by visuomotor discrepancies 
+(Sekiyama et al., 2000 ). Psychophysical results accompanying such fMRI research demonstrate the time course and localiza -
+tion error reduction of sensor-motor adaptation that one can 
+expect to experience in XR environments; such adaptation is 
+typically associated with a loss in cue sensitivity when exposed 
+to a perturbing sensory conflict (Webster, 2015 ). The fMRI 
+results further suggest a potential for broader change in 
+visuomotor function that includes coding new brain repre -
+sentations such as body schemas as an outcome of a positive 
+or more functional adaptation process. As aforemen -
+tioned, these and other psychophysical data suggest that 
+visuomotor adaptation to XR stimuli can occur within min-
+utes of XR exposure (M. S. Dennison et al., 2016 ; Moss & 
+Muth, 2011 ) or over longer periods of time as changes register 
+beyond the retina to higher perceptual areas (Kitazaki, 2013 ). 
+Overtime, such adaptation is expected to mitigate cybersick -
+ness. To better understand the role of adaptation as 
+a mitigation for cybersickness, a human-centered approach 
+is needed where symbiosis between human and technology is 
+achieved (Fidopiastis et al., 2010 ).
+Adaptation can be considered a multichannel process, as it 
+relies on complex neural processing in multiple interacting 
+networks of both motor and sensory systems (i.e., receptors, 
+such as retina or limb). Thus, adaptation effects are not 
+localized to the level of the sensor alone (Webster, 2015 ), 
+but are rather manifest at the brain level in action networks, 
+such as those used to direct hand-eye coordination or postural Table 2. Potential cybersickness mitigation strategies implied by different etiological hypothesis.
+Underlying 
+hypothesis 
+(and section 
+discussed)Cybersickness mitigations
+Sensory cue conflict 
+(Sects. 2.5, 3)●Upon initial XR exposure, minimize or eliminate motion parallax cues so users can acclimate to the XR experience.
+●Gradually step-up motion parallax cues over time.
+●If a user begins to feel discomfort, diminish the motion parallax cues once again.
+●Include options to minimize the amount of head movement/motion parallax required.
+●Use teleportation (but note that this can increase disorientation and hinder spatial awareness).
+●Add concordant motion (e.g., a motion-base to reduce visual-vestibular conflicts).
+●Ask observers to actively align their head/body to the behavior of the virtual motion they are experiencing.
+●Limit or slow forward speed and acceleration to reduce visual scene motion.
+●When conflicts persist:
+○Provide visual cues that match the vestibular system, such as by adding inertially stable visual motion cues (e.g., a fixed-horizon).
+○Minimize vestibular cues through depth-of-field blur, peripheral blur, or dynamic field of view, the latter of which involves modifying 
+FOV based on speed and angular velocity.
+Evolutionary 
+(2.5, 4)●Foster sensory adaptation via perceptual recalibration by highlighting visuomotor discordances in order to engender a sense of body 
+ownership and drive sensorimotor adaptation in XR environments.
+●Foster sensory adaptation via visual-motor skill alterations by using representational feedback that appears to arise from manipulation 
+of the XR environment.
+Ecological 
+(2.5, 5)●XR should be used while seated, and users should be encouraged to use a headrest.
+●Design XR dynamics that support rather than degrade postural stability.
+●Use motion sensor data (from headsets) to identify individuals at risk for cybersickness.
+●Modulate XR dynamics in real time to suppress unstable postural activity.
+Multisensory 
+reweighting 
+(2.5, 6)●Promoting rapid re-weighting of multisensory cues may protect against the provocative conditions of XR exposure.
+●Methods of facilitating vection might offer protection from cybersickness in XR.
+●“Re-couple” multimodal cues, either by physically moving an observer along with visual self-motion or by stimulating the vestibular 
+sense with mild current (galvanic vestibular stimulation, GVS) to replicate missing acceleration cues.
+●Use of vestibular noise can modulate the cybersickness response.
+●Expose users to tonic noisy GVS over a long duration (30 min continuous) to reduce cybersickness.
+●Consider using tDCS to reduce the severity of cybersickness.
+●Increase presence to lower cybersickness.
+●Use positive smells and pleasant-sounding music to promote user comfort.INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+ 1791 
+stability. For example, a viewer is presented with a virtual 
+visual object in an XR display, which will be coarser in 
+appearance than in the real world because pixels will be 
+magnified in the display. This visual object will thus appear 
+different than in the real world because of the magnification 
+and smaller display FOV. Further, the fixed single image 
+plane of the display will affect vergence-accommodation of 
+the eye, thus leading to unnatural blurring of the virtual object 
+within the visual field. As a result, when a viewer attempts to 
+invoke natural hand-eye coordinated activities with the virtual 
+object, the body will need to adapt to the offset world dis-
+played in the headset. All of these offsets (i.e., pixel magnifi -
+cation, vergence-accommodation mismatches, unnatural 
+viewing), not only affect the retina of the eye but also the 
+brain networks necessary for directed behavior in the real 
+world. The human visual system is thus constantly adapting 
+and responding to many XR induced consistent and incon -
+sistent visual perceptual changes simultaneous to the obser -
+ver’s interaction within XR environments. These perceptual 
+changes are occurring quickly and along multiple perception 
+channels, such as visual, auditory, and tactile/kinesthetic. 
+Thus, adaptation “process” outcomes are complex, integrated, 
+and brain-based. These effects may also interact with end- 
+state adaptations, such as hand-eye coordination and postural 
+stability. It is important to consider integration of eye tracking 
+into HWDs to effectively capture such adaptive changes in eye 
+point positioning and adjust visual content to support these 
+adaptive changes, such as by presenting virtual objects at the 
+appropriate depth and resolution to support human perfor -
+mance (Fidopiastis  et al., 2003 ; Fidopiastis, 2006 ). This is not 
+a simple challenge. Current XR designers and developers must 
+be careful not to oversimplify the problem space of human 
+adaptation. Thus, while adaptation is a potential mediator to 
+cybersickness, given the multichannel nature of adaptation, 
+the specific training methods, or exposure protocols required 
+to drive adaptation within XR are not entirely established for 
+all aspects of the user’s response (Dużmańska et al., 2018 ). An 
+opportunity exists to discern a collection of adaptation 
+schemes such that the effects and duration of cybersickness 
+and negative sensory-motor reorganization are lessened 
+across a wide variety of XR solutions (c.f. Kennedy et al., 
+2000 ).
+Welch and Sampanes (2008 ) suggested that two types of 
+adaptation, perceptual recalibration (i.e., an automatic, 
+restricted process of perceptual learning) and visual-motor 
+skill alterations (i.e., learning hand and eye-coordinated 
+movements through a cognitive problem-solving process) 
+are distinguishable based upon characteristics and conditions 
+that constitute the XR experience. Visual perceptual recalibra -
+tion occurs when one sensory system (e.g., vision) calibrates 
+another (e.g., touch). This type of perceptual learning is 
+expected to contribute greatly to negative aftereffects, whereas 
+visual motor skill acquisition occurring during problem- 
+solving tasks that are spatially complex and require more 
+voluntary movement may not contribute as much to negative 
+aftereffects (Clower & Boussaoud, 2000 ).
+In terms of perceptual recalibration, adaptation has con-
+scious and unconscious components that lend to one’s per-
+ception and representation of self or body schema as an actor in XR environments (Rossetti et al., 2005 ). Body schema 
+(unconscious, interactor with the environment) and body 
+image (partially conscious, personal self) are understood to 
+be integrally connected via dynamic interactions instead of 
+hierarchical linkages, which together drive body ownership 
+(Gallagher, 2005 ). In healthy persons, embodied object (inan -
+imate, animate, human) “representations” or cognitive assess -
+ments assist in determining perception and action with 
+reference to one’s own body (Reed et al., 2004 ). Alteration 
+in perception of such body schema is apparent, for example, 
+in prism studies where a new representation of visuomotor 
+mapping of the hands emerges during adaptation to reversal 
+of the visual field (Sekiyama et al., 2000 ). An embodied 
+cognition XR design approach (Weser & Proffitt, 2019 ) may 
+thus better assist with facilitating multiple levels of human 
+system adaptation responses and allow for a more symbiotic 
+integration with XR technologies (see Table 2).
+●One class of XR adaptation schemes could be targeted at 
+perceptual recalibration and involve highlighting visuo -
+motor discordances in order to engender a sense of body 
+ownership and drive sensorimotor adaptation in XR 
+environments (i.e., when visuomotor discrepancies 
+occur, feedback could be provided that is coincident 
+with the limb indicating an internal error, thereby 
+engendering perceptual recalibration). While such reca-
+libration is expected to lead to adverse aftereffects, when 
+sense of embodiment is critical to skill acquisition this 
+approach may be appropriate.
+In terms of visual-motor skill alterations, research using 
+re-adaptation strategies, such as eye-to-hand coordination 
+activities post-exposure, suggests that during XR exposure 
+participants undergo visual-motor adaptations that do not 
+quickly return to baseline skill levels even after short expo -
+sure durations (c.f. Champney et al., 2007 ). Given that much 
+of the past visual-motor skill alterations related research 
+utilized VR systems (c.f. Bagce et al., 2011 ), one might 
+conclude that maladaptation issues are pervasive only within 
+fully immersive XR displays. This conclusion is unsupported, 
+as AR video and projection HWDs also show evidence of 
+negative hand-eye coordination aftereffects (Biocca & 
+Rolland, 1998 ). For example, Condino et al. (2020 ) demon -
+strated that persons performing a precision connect-the-dot 
+task in AR were off by an average 5.9 mm but could not tell 
+that they were making such gross hand-eye coordination 
+errors. These results suggest that visual-motor skill altera -
+tions also change body perception and attribution of move -
+ment agency. Design strategies may need to account for body 
+perception to allow for a more cooperative adaptation pro-
+cess (see Table 2).
+●A second class of XR adaptation schemes could be targeted 
+at visual-motor skill alterations and involve using repre -
+sentational feedback that appears to arise from manipula -
+tion of the XR environment (i.e., not perceived to be 
+physically coincident with the limb and thus registered as 
+an external error), leading to an indirect mapping strategy 
+that allows for context-specific adjustments of motor 1792
+ K. STANNEY ET AL. 
+responses within the XR environment but minimal adverse 
+aftereffects. When embodiment is not critical to skill acqui -
+sition, such as in more cognitive, problem-solving tasks, 
+this type of adaptation scheme may be appropriate.
+A human-centered design cycle that includes these and 
+other types of adaptation schemes may help mitigate cyber -
+sickness in XR systems. The effectiveness of such adaptation 
+may, however, be XR technology and task dependent and may 
+be confounded by exposure duration (Dużmańska et al., 
+2018 ). Tasks and types of feedback make a difference in 
+adaptation outcomes when the XR environment requires real- 
+world actions. Thus, adaptation effects may scale to body 
+schema representations in the brain and only become facil-
+itatory once a new brain representation is defined. Providing 
+a more encompassing perspective of adaptation may guide 
+research and facilitate a better understanding of mechanisms 
+of cybersickness. Based on this review, important considera -
+tions to add to the updated R&D agenda include:
+●Establish human adaptation schemes in XR applications.
+●Integrate eye-tracking into XR devices.
+●Determine specific training methods or exposure proto -
+cols required to drive sensory adaptation within XR 
+systems; such as by examining:
+○The feasibility of fostering perceptual recalibration to 
+engender a sense of body ownership and drive sen-
+sorimotor adaptation.
+○The feasibility of fostering visual-motor skill altera -
+tions that lead to an indirect mapping strategy that 
+allows for context-specific adjustments of motor 
+responses.
+In conclusion, the review in this section suggests that, 
+while the sensory conflict hypothesis implies that individuals 
+may be sensitive to sensory cues and this sensitivity may lead 
+to cybersickness, it may be feasible to mitigate this sensitivity 
+by fostering sensory adaptation. Related implications for 
+cybersickness mitigation based on the evolutionary hypothesis 
+have been summarized in Table 2.
+5.Ecological hypothesis: Postural instability and 
+cybersickness (Stoffregen)
+Sensory conflict is hypothesized to arise from discrepancies 
+between the current pattern of multisensory input and the 
+pattern expected on the basis of past interactions with the 
+environment (Oman, 1982 ; Reason, 1978 ). The hypothesis 
+proposes an antagonistic process in which some inputs are 
+suppressed in favor of others, and in which adaptation con-
+sists of changes in weights (e.g., Gallagher & Ferrè, 2018 ; 
+Weech, Varghese, & Barnett-Cowan, 2018 ). Variants of sen-
+sory conflict hypothesis have been proposed, such as 
+Treisman’s (1977 ) poison hypothesis, which argues that per-
+ception requires sense-specific spatial reference systems, and 
+that ingested toxins produce “mismatches between the sys-
+tems” (p. 494). Thus, ingested toxins are seen simply as being 
+a source of sensory conflict.In the “rest frame” hypothesis (Prothero & Parker, 2003 ), 
+hypothetical rest frames are accessed via multisensory stimu -
+lation; a “visual rest frame,” and “inertial rest frame,” and so 
+on. Hence, conflict between hypothetical rest frames entails 
+sensory conflict. Finally, Ebenholtz et al. (1994 , p. 1034), 
+acknowledged that their “eye movement hypothesis” was clo-
+sely aligned with sensory conflict hypothesis.
+Stoffregen and Riccio (1991 ), argued that the interpretation 
+of any pattern of multisensory input as “conflict” requires 
+comparison with some other pattern that is defined as “non- 
+conflict.” Patterns of light, sound, and so on carry no intrinsic 
+metric for “equality” (contra Howard, 1982 ). Accordingly, the 
+definition, or standard, for non-conflict must be internal (e.g., 
+Oman, 1982 ). Comparison of current multisensory patterns 
+against internal expectations is problematic because the scien -
+tist cannot know a person’s history of interactions with the 
+environment and, therefore, cannot know (in quantitative 
+detail) what pattern of multisensory stimulation is expected. 
+Thus, while we may quantify patterns of sensory stimulation, 
+we cannot compute a quantitative estimate of conflict between 
+current and expected inputs. It follows that sensory conflict 
+hypothesis is not subject to empirical test: It cannot be falsi-
+fied (Ebenholtz et al., 1994 ; Lackner & Graybiel, 1981 ; 
+Stoffregen & Riccio, 1991 ).
+Sensory conflict hypothesis has struggled to explain com -
+mon motion sickness phenomena. For example, several stu-
+dies find that motion sickness is more common among 
+women than among men. Attempts to account for this effect 
+(for a review, see Koslucher et al., 2016 ) have been ad hoc: 
+they have not claimed there are sex-specific levels of sensory 
+conflict. Women and men have similar types of perceptual- 
+motor interactions with the world. Given this elementary fact, 
+why should sensory conflict differ between the genders?
+Consider also the common observation that passengers are 
+more likely to experience motion sickness than drivers (e.g., 
+Oman, 1982 ; Reason, 1978 ). In a yoked control study, Rolnick 
+and Lubow (1991 ) found that passengers were more likely 
+than drivers to become sick. As the authors noted, “there is 
+no reason to assume that this conflict was absent or reduced 
+in subjects who had control, as compared to no-control sub-
+jects” (p. 877). Stoffregen, Chang et al. (2017 ) asked middle- 
+aged adults to drive a virtual automobile. Some participants 
+had decades of experience driving physical vehicles, while 
+others had never driven any motor vehicle. If real driving 
+experience gives rise to particular expectations for multisen -
+sory stimulation which match simulated driving, then motion 
+sickness should have differed between drivers and non- 
+drivers, but the incidence of motion sickness was not 
+observed to differ between drivers and non-drivers. The fact 
+that sensory conflict hypothesis cannot explain either sex 
+differences or the driver-passenger effect, both of which 
+have been reported in the literature, calls for consideration 
+of alternative theories.
+Riccio and Stoffregen (1991 , p. 205) hypothesized that, “ … 
+prolonged postural instability is the cause of motion sickness 
+symptoms. That is to say, we believe that postural instability 
+precedes the symptoms of motion sickness, and that it is 
+necessary to produce symptoms.” Riccio and Stoffregen 
+acknowledged that “inputs” from different perceptual systems INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+ 1793 
+often differ, but they pointed out that these differences need 
+not be interpreted in terms of conflict. They proposed that 
+multisensory non-identities constitute higher-order informa -
+tion about animal-environment interaction, and that the 
+senses work cooperatively (rather than antagonistically) to 
+detect this higher-order information. This proposal has rele-
+vance for motion sickness, but also in terms of general the-
+ories of perception (Riccio & Stoffregen, 1988 ; Stoffregen & 
+Bardy, 2001 ; Stoffregen, Mantel et al., 2017 ; Stoffregen & 
+Riccio, 1988 ). The postural instability hypothesis is incompa -
+tible with sensory conflict hypothesis in terms of broader 
+concepts of information processing upon which the sensory 
+conflict hypothesis is based (e.g., Chemero, 2011 ; Gibson, 
+1966 ; 1979 ; Pascual-Leone et al., 2005 ). The postural instabil -
+ity hypothesis shifts the focus in motion sickness research 
+away from perceptual inputs and information processing 
+and toward the organization and control of movement 
+(Stoffregen, 2011 ).
+The postural instability hypothesis suggests that a postural 
+precursor of motion sickness is a parameter of postural activ -
+ity that differs between individuals who (later) report being 
+well versus sick (e.g., Munafo, Diedrick & Stoffregen, 2017 ; 
+Stoffregen & Smart, 1998 ), or which differs as a function of 
+the severity of subsequent sickness (e.g., Stoffregen et al., 
+2013 ; Weech et al., 2018 ). Postural precursors of motion 
+sickness have been identified in numerous settings, popula -
+tions, and dependent variables, including:
+●Head-mounted displays (Munafo et al., 2017 ; Arcioni 
+et al., 2018 ; Merhi et al., 2007 ; Risi & Palmisano, 2019 ).
+●Desktop VR technologies (Chang et al., 2017 , 2012 ; 
+Chen et al., 2012 ; Dennison & D’Zmura, 2017 ; Dong 
+et al., 2011 ; Stoffregen et al., 2014 , 2008 ; Stoffregen et al., 
+2017 ; Villard et al., 2008 ).
+●Military flight simulators (Stoffregen, Hettinger, Haas, 
+Roe, & Smart, 2000 ).
+●In moving rooms (Bonnet et al., 2006 ; Li et al., 2018 ; 
+Smart et al., 2002 ; Stoffregen & Smart, 1998 ; Stoffregen 
+et al., 2010 ; Walter et al., 2019 ).
+●On ships at sea (Stoffregen et al., 2013 ).
+●For postural activity during stance (e.g., Bonnet et al., 2006 ; 
+Stoffregen et al., 2010 ; Walter et al., 2019 ) and while seated 
+(Chen et al., 2012 ; Dong et al., 2011 ; Merhi et al., 2007 ; 
+Stoffregen et al., 2000; Stoffregen et al., 2008 , 2014 ).
+●For the “driver-passenger effect”. Postural precursors of 
+motion sickness differ qualitatively between persons 
+who do versus do not exert active control of visual 
+motion stimuli. This effect has been demonstrated in 
+virtual vehicles (Dong et al., 2011 ), and in virtual ambu -
+lation (Chen et al., 2012 ). Postural precursors of motion 
+sickness can differ between individuals who exert differ -
+ent types of control over visual motion stimuli 
+(Stoffregen et al., 2014 ).
+●In pre-adolescent children (Chang et al., 2012 ), young 
+adults (e.g., Munafo et al., 2017 ; Chang et al., 2017 ; 
+Stoffregen & Smart, 1998 ; Walter et al., 2019 ), and mid-
+dle-aged adults (Munafo et al., 2017 ).
+●In men and women (Munafo et al., 2017 ; Koslucher 
+et al., 2015 , 2016 ).●For a wide variety of dependent variables, many of 
+which are orthogonal. These include the spatial magni -
+tude of postural activity (e.g., Munafo et al., 2017 ; 
+Stoffregen & Smart, 1998 ), temporal dynamics (e.g., 
+Stoffregen et al., 2010 ; Villard et al., 2008 ), movement 
+multifractality (e.g., Munafo et al., 2017 ; Koslucher et al., 
+2016 ), the temporal coupling of postural activity with 
+imposed motion (Walter et al., 2019 ), and postural 
+“time-to-contact” (Li et al., 2018 ).
+Researchers sometimes have mistakenly assumed that the 
+postural instability hypothesis would be supported only if 
+motion sickness was associated with increased spatial magni -
+tude of postural activity (e.g., Dennison & D’Zmura, 2017 ; 
+Widdowson et al., 2019 ); however, Riccio and Stoffregen 
+(1991 ) did not make this prediction. Motion sickness has 
+been preceded by an increase in the spatial magnitude of 
+postural activity (e.g., Stoffregen & Smart, 1998 ), or by 
+a decrease in spatial magnitude (e.g., Dennison & D’Zmura, 
+2017 ; Stoffregen et al., 2008 ; Weech et al., 2018). Both results 
+are consistent with the prediction of the postural instability 
+hypothesis that postural sway will differ between persons who 
+experience motion sickness and those who do not, and that 
+such differences will exist before the onset of motion sickness 
+symptoms (Stoffregen et al., 2008 ; Weech et al., 2018 ).
+Based on this review, an important consideration to add to 
+the updated R&D agenda includes:
+●Determine what makes an individual susceptible to pos-
+tural instability during XR use (e.g., vestibular migraine 
+susceptibility; Lim et al., 2018 ).
+In summary, Stoffregen and Riccio (1991 ) have provided 
+much evidence in support of the postural instability hypoth -
+esis, which has been supported by the many studies cited 
+above. Based on this review, the design implications for 
+cybersickness mitigation based on the ecological hypothesis 
+have been summarized in Table 2.
+6.Multisensory re-weighting and an alternate 
+approach to cybersickness (Weech)
+Weech et al. (2018a ) has sought to develop and test 
+a perspective of cybersickness that focuses on its relationship 
+to a crucial task of the CNS: accurate estimation and control 
+of 3D orientation of head-and-body. This process requires as 
+input a stream of noisy, multimodal cues and will ideally 
+produce appropriate behavior as output. A study of cybersick -
+ness from this perspective means, first, to assess how indivi -
+dual differences in multimodal information processing might 
+relate to discomfort in virtual spaces; and second, to develop 
+interventions that aim to mitigate the damage caused when 
+the CNS experiences a challenge in finding solutions to this 
+control task.
+Hardware, software, and user factors play a significant 
+moderating role in the nauseogenicity of XR exposure, and 
+what we know about cybersickness etiology has derived par-
+tially from a careful study of the most provocative cases. 
+Nausea is provoked by simulating user-motion in XR by 1794
+ K. STANNEY ET AL. 
+moving the viewpoint independently of the head of the user 
+(e.g., applying a “head bob”, passive navigation, or tracking 
+jitter; Palmisano et al., 2007 ), by adjusting the visual gain of 
+head movements (Chung & Barnett-Cowan, 2019 ), or by 
+visual update failure during head motion (Kolasinski & U.S. 
+Army Research Institute For The Behavioral And Social 
+Sciences, 1995 ). In the Sensory cue conflict and cybersickness 
+section above, the role of individual sensitivity to sensory cues 
+was discussed, and the impact of miscalibrated visual displays 
+was briefly mentioned in the introduction. The negative 
+effects produced in these cases are often causally attributed 
+to the conflict between expected patterns of multimodal input 
+and those generated during these conditions (Oman, 1990 ; 
+Reason & Brand, 1975 ; Watt, 1983 ). Prospective sites of “con -
+flict detection” identified by monkey neurophysiology include 
+the vestibular brainstem (Oman & Cullen, 2014 ), which is 
+densely linked to emetic centers of the brain (Yates et al., 
+2014 ). Thus, the sensory conflict hypothesis provides a strong 
+model for cybersickness (Oman, 1990 ), which is supported by 
+empirical and neurophysiological evidence (Oman & Cullen, 
+2014 ; J. Wang & Lewis, 2016 ), and which has generated 
+testable predictions about how to tackle the problem 
+(Cevette et al., 2012 ; Reed-Jones et al., 2007 ; Weech et al., 
+2018a ).
+At the same time, the rate at which the cybersickness 
+problem grows in severity is much faster than the rate of 
+our scientific progress. The XR user base is orders of magni -
+tude greater than a decade ago, and the most recently- 
+developed XR hardware entirely eclipses even the most expen -
+sive hardware from 10 years ago, by which time the bulk of 
+our field’s research had already been carried out. Here, recent 
+discoveries and advances in cybersickness research are high -
+lighted with the hope of inspiring further research that, 
+one day, leads to the reliable and universal solution to cyber -
+sickness that currently eludes us.
+Much of the recent research on cybersickness is informed 
+by the finding that users often experience a mild form of 
+inoculation to cybersickness with repeat exposure to XR. In 
+the Evolutionary Hypothesis section of this paper, it is sug-
+gested that the user “learns” to ignore the conflict between 
+visual and vestibular information (i.e., sensory adaptation) to 
+which they are exposed over time (Rebenitsch & Owen, 2016 ; 
+Watt, 1983 ). This adaptation has been described as a sensory 
+re-weighting process, where weights of visual cues are upre -
+gulated relative to conflicting vestibular cues (Gallagher & 
+Ferrè, 2018 ; Weech et al., 2018a ) according to principles of 
+statistically optimal cue integration (Butler et al., 2010 ; Fetsch 
+et al., 2010 ). In this framework, cues are down-weighted if 
+they do not contribute to useful estimates of the state of the 
+world or body; sensations that are high in reliability (such as 
+vision) take precedence over noise-rich cues (as in the vestib -
+ular modality). An example of the low variance of vision 
+compared to vestibular cues can be seen in vection, the visual 
+illusion of self-motion: visual motion dominates perception 
+after a few seconds, resulting in the feeling that one’s body is 
+in motion, regardless of the vestibular cues that indicate 
+a static head during the initial period of visual surround 
+motion (Weech & Troje, 2017 ).Recently, we have sought evidence about the aspects of 
+sensorimotor processing that are most predictive of cybersick -
+ness proclivity. A set of predictors was collected, including 
+self-reports of vection strength, vestibular thresholds, and 
+excursions of the body center-of- pressure from 30 partici -
+pants. To eliminate collinearity, a principal components 
+regression approach was adopted, which factors out correla -
+tions and computes unique variances for each predictor. The 
+resulting model, which was built using indices derived before 
+exposure to VR, significantly predicted later cybersickness 
+severity (R2 = 0.37, p =.018). The greatest unique variance in 
+the model was carried by the postural sway during trials 
+intended to elicit vection (see Figure 6a), and by inspecting 
+the simple trends, one can see that increased visual motion- 
+induced postural sway was associated with lower levels of 
+cybersickness (r(28) = −0.53, p = .002; Figure 6b; Weech 
+et al., 2018b ). One interpretation of these data is that those 
+who rapidly re-weight multisensory cues are also those who 
+Figure 6. (a) Principal component (PC) loadings for each predictor*; b) Negative 
+correlation between postural sway during vection, and cybersickness (ΔCS) 
+(Adapted from Weech et al., 2018b ). * Percentage values on left indicate the 
+amount of variance in cybersickness scores accounted for by each PC; 
+Percentage values on the bottom indicate the amount of unique variance in 
+cybersickness scores accounted for by each predictor. Darker colors depict 
+higher loadings, representing a greater expression of that factor on the PC. 
+MSSQ = Motion Sickness Susceptibility Questionnaire score; EOF = Eyes Open 
+Foam condition sway path length (SPL); ECF = Eyes Closed Foam condition SPL; 
+V = Vection condition SPL; EOS = Eyes Open Standard condition SPL; ECS = Eyes 
+Closed Standard condition SPL; VStr = Vection Strength ratings; Thresh = 
+Vestibular Thresholds.INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+ 1795 
+are most protected against the provocative conditions of XR 
+exposure. This account would also suggest that methods of 
+facilitating vection might offer protection from cybersickness 
+in XR. This is a prospect that has been tested in previous 
+experiments, and the evidence appears to align with this 
+suggestion.
+One such piece of evidence comes from procedures that 
+“re-couple” multimodal cues, either by physically moving an 
+observer along with visual self-motion (Aykent et al., 2014 ; 
+Dziuda et al., 2014 ; Kluver et al., 2015 ), or by stimulating the 
+vestibular sense with mild current (galvanic vestibular stimu -
+lation, GVS) to replicate missing acceleration cues (Cevette 
+et al., 2012 ; Gálvez-García et al., 2014 ; Reed-Jones et al., 2007 ). 
+Despite the efficacy of such methods, accurately replicating 
+missing inertial cues is challenging. Based on the premise that 
+noise modulates the reliability of sensory channels, we exam -
+ined if adding sensory noise to the vestibular system can guide 
+self-motion perception away from the zone of discomfort 
+(conflicting multimodal cues) and toward a resolved percept 
+(Weech & Troje, 2017 ). It was first established if visual dom -
+inance can be facilitated using vestibular noise, which was 
+applied using either stochastic electrical current (noisy GVS) 
+or vibration of the mastoid bone (bone-conducted vibration, 
+BCV). Results indicated a quickening of the vection response 
+across the range of circular vection axes when transient ves-
+tibular noise was applied, but not for seat vibration or air- 
+conducted sound, which supports a vestibular origin for the 
+effects.
+In XR environments, vestibular noise can also modulate 
+the cybersickness response. Results of a navigation task where 
+participants piloted through virtual space with or without 
+BCV revealed a reduction in sickness severity when BCV 
+was used (Weech et al., 2018a ). The time-course of stimula -
+tion was an important factor: For this short-duration experi -
+ment, cybersickness was diminished only when stimulation 
+was time-coupled to large visual accelerations. This time- 
+specificity of cue integration in perceptual decision making 
+is consistent with recent models (Parise & Ernst, 2016 ; Wong, 
+2007 ). It has also been demonstrated that VR users who are 
+exposed to tonic noisy GVS over a longer duration (30 min 
+continuous) demonstrate a reduction of cybersickness (Weech 
+et al., 2020b ).
+Emerging evidence reveals the scope for cybersickness 
+reduction interventions that target the multisensory cortex. 
+Neuroimaging highlights a differential activation of tempor -
+oparietal junction (a major multimodal integration site; 
+Blanke, 2012 ) and occipital areas during cybersickness (Chen 
+et al., 2010 ). Although recent evidence shows that trans- 
+cranial direct current stimulation (tDCS) to reduce cortical 
+excitability over temporoparietal junction is associated with 
+a reduced severity of cybersickness (Takeuchi et al., 2018 ), 
+more studies are required to confirm these effects (tDCS 
+paradigms have been criticized for non-reproducibility of 
+late; e.g., Medina & Cason, 2017 ; Minarik et al., 2016 ).
+Another cybersickness reduction technique involves the 
+protective use of “presence,” the sense of “being there” in an 
+XR environment. An increased level of presence has been 
+associated with lower cybersickness, either due to the effects 
+of the latter on attentional resources, or changes in the processing of multimodal stimuli during presence (Weech 
+et al., 2019 a). Results of a recent study with a large sample 
+of participants (Total N = 170) revealed that building an 
+enriched narrative context in VR both increases levels of 
+presence and reduces cybersickness severity (Weech et al., 
+2020a ). This reduction was greatest for individuals at-risk to 
+cybersickness, such as those unfamiliar with video games. 
+Other top-down manipulations on cybersickness have 
+demonstrated effectiveness in recent years, including findings 
+that a positive smell (“rose”; Keshavarz et al., 2015 ) and 
+pleasant-sounding music (Keshavarz & Hecht, 2014 ; Sang 
+et al., 2006 ) can promote moderately better user comfort. 
+Based on these limited findings, a presence consideration 
+that was part of the Stanney et al. (1998 ) R&D agenda and 
+an additional consideration to add to the updated R&D 
+agenda include:
+●Determine relationship between presence, cybersickness, 
+and adverse physiological aftereffects.
+●Determine aspects of sensorimotor processing that are 
+protective of cybersickness proclivity (e.g., ability to 
+reweight sensory cues rapidly).
+Based on these results and the associated review, the design 
+implications for cybersickness mitigation based on multisen -
+sory reweighting have been summarized in Table 2. In sum, it 
+is clear that we are at an exciting time in cybersickness 
+research. While much research has been focused on trying 
+to further our understanding of cybersickness from the “sen -
+sory re-weighting” approach, others have obtained evidence 
+for the alternative approaches discussed in each respective 
+hypothesis section above. Far from being a problem, this 
+should be perceived as a healthy diversity of opinion in the 
+cybersickness research field, and as a welcome reminder of the 
+significant work still to be done before a single unifying 
+theory of cybersickness is attained.
+7.Operational implications of cybersickness: 
+Considerations of a military use case (Dennison and 
+Lawson)
+Why should we care about cybersickness? As mentioned in 
+the Introduction, XR technology is expanding into multiple 
+domains from entertainment to commerce to industry to 
+military operations. The envisioned applications are endless. 
+Yet, if cybersickness cannot be resolved, XR could fall far 
+short of its promise and, worse yet, create a divide between 
+the susceptible and non-susceptible. As Lackner (2014 , 
+p. 2495) noted:
+“ … the range of sensitivity in the general population varies about 
+10–1, and the adaptation constant also ranges from 10 to 1. By 
+contrast, the decay time constant varies by 100–1. The import of 
+these values is that susceptibility to motion sickness in the general 
+population varies by about 10,000–1, a vast range.” 
+The implication of these vast individual differences is that, 
+while some people may be able to fully embrace the power 
+and potential of XR technology, those who are highly suscep -
+tible may be left on the sidelines watching this new era of XR- 1796
+ K. STANNEY ET AL. 
+empowered productivity and entertainment pass them by. 
+This could have future effects on career opportunities and 
+progression. For example, the military is interested in learning 
+how HWDs can aid Warfighters in performing multiple tasks 
+in parallel and with greater efficiency. Such technologies have 
+the potential to dramatically change the way that Warfighters 
+train and fight. In fact, former Secretary of Defense James 
+Mattis wanted all infantrymen to fight “25 bloodless battles” 
+before they ever set foot in a real combat environment. If 
+some service members are not able to tolerate such training, 
+this could affect future selection as much as intractable air-
+sickness affects pilot selection today.
+Military immersive environments will be employed as part of 
+realistic simulations of meaningful real-world events and opera -
+tions, rather than as ways to introduce an element of entertain -
+ment or fantasy into the user’s experience. For example, while it 
+is advantageous for military training to be engaging (elevated 
+arousal will make training to perform under stress more effec -
+tive), many commonly employed aspects of first-person-shooter 
+online gaming (such as respawning, unlimited ability to carry 
+gear and ammunition, additional cues when a target is acquired, 
+additional friend/foe cues, limited weapons noise, or recoil) do 
+not yet apply to most real-world operations and would prove 
+deleterious XR features for ensuring transfer of training from 
+a game to actual combat.
+The military applications where XR technologies are most 
+likely to be beneficial include:
+●Situations that are expensive to simulate (e.g., major war 
+games, expensive-to-operate weapons, or platforms).
+●Situations that are dangerous to practice in real life (e.g., 
+putting out a shipboard fire).
+●Situations that cannot be properly simulated in tradi -
+tional group simulation devices or training centers, 
+because they inherently require individually mounted 
+technology (e.g., due to the necessary squad mobility 
+and distributed operations with other team members 
+needed to practice the mission).
+●Scenarios where situated learning through embodied 
+and contextualized training are beneficial, e.g., training 
+combat medics/corpsmen to develop a casualty response 
+plan and administer care (to an actual manikin with 
+augmented reality injury overlays) while they are sub-
+jected to virtual battlefield stressors. In such situations, 
+AR (versus VR) will be most applicable.
+●Operational scenarios where Warfighters can afford to 
+be completely immersed without the need for extensive 
+situational awareness of their immediate, real envir -
+onment as part of their training (e.g., in a simulated 
+Tactical Operations Center, the trainees usually do not 
+need to have local views of the neighborhood around the 
+training center in order to practice their mission). In 
+such situations, VR (versus AR) will be most applicable.
+In the military setting, performance contributing to mis-
+sion success is the key outcome variable, rather than other 
+considerations such as presence, vection, or cybersickness. 
+However, if the service member does not feel well during 
+XR immersion, this is concerning even if task performance does not deteriorate immediately, because it could cause ser-
+vice members to avoid using XR training and operational 
+support devices, and because the effects may build or persist 
+after exposure, cause the susceptible individual to experience 
+distracting sensations (such as fatigue or flashbacks) that 
+could harm subsequent performance of other duties, or curtail 
+motivation to keep up with lower-priority but important tasks 
+(Birren, 1949 ), such as weapons cleaning.
+Despite possible benefits of using XR training and opera -
+tional support in workforce-related applications within the 
+military and beyond, the strong likelihood of susceptible indi-
+viduals experiencing cybersickness remains a significant con-
+cern. We would argue that the magnitude of this cybersickness 
+problem, and its implications to job performance and career 
+progression, are poorly understood by society in general. This is 
+not only due to problems with existing hardware, which are 
+likely to be resolved, but with a lack of understanding of how 
+cybersickness manifests, varies across individuals, and how it 
+may be mitigated. This lack of understanding has resulted in 
+a deemphasizing of the importance of cybersickness research 
+being conducted, and rather a push for cybersickness as being 
+something users will eventually just adapt to.
+The negative symptoms associated with cybersickness are 
+most often quantified through surveys and questionnaires, 
+such as the SSQ (Kennedy et al., 1993 ). Although these meth -
+ods are well-validated, they are difficult to administer in 
+operational environments where the operator cannot pause 
+for more than a few seconds, and they require the immersed 
+operator to shift their focus away from their current task. This 
+may not only decrease situation awareness within the XR 
+environment, but also decrease the probability of operational 
+success by adding more cognitive load to the operator. Thus, 
+an automated solution to track symptom magnitude without 
+user input is needed, such as monitoring of physiological 
+responses or magnitude of head movements.
+There is limited research showing the feasibility of training 
+modern sensor systems to classify cybersickness symptom 
+magnitude and onset. Research examining physiological data 
+have been equivocal (Keshavarz et al., 2014 ), although some 
+sensors and features, like those associated with respiratory 
+(Denise et al., 2009 ; Dennison et al., 2016 ; Wang & Perry, 
+2006 ), blinking (Kim et al., 2005 ; Ponder & Kennedy, 1927 ), 
+cardiovascular (Money & Cheung, 1983 ; Ohyama et al., 2007 ), 
+and gastrointestinal activity (Dennison et al., 2016 ), have been 
+informative in several studies. Critically, the majority of these 
+analyses examine data in a unimodal fashion, where changes 
+in a single sensor system are compared with changes in the 
+level of reported sickness during the experiment, or more 
+commonly, on the SSQ after the experiment has concluded 
+and the user has removed themselves from the XR environ -
+ment (Dennison & D’Zmura, 2017 ; Dennison et al., 2016 , 
+2016 ; Lin et al., 2007 ). Recent work has demonstrated that 
+the analysis and subsequent extraction of meaningful features 
+from multimodal data can be used to train machine learning 
+models that classify cybersickness severity over time 
+(Dennison et al., 2019 ). This work has shown that models 
+trained on multimodal data outperform models constructed 
+on only features garnered from unimodal sensor data in the 
+majority of cases. Such systems may prove useful in INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+ 1797 
+Table 3. Recommended R&D Agenda to resolve cybersickness (update of Stanney et al., 1998 ).
+Research area Action item Priority Term Progress to date
+Basic 
+knowledgeDetermine the various drivers of cybersickness and create 
+a predictive model.2 M Models are in development concerning visual-vestibular 
+conflicts, postural contributors, etc.
+Establish means of determining user susceptibility to 
+cybersickness and aftereffects.2 S-M Potential individual susceptibility predictors are being 
+explored, such as past susceptibility, heritability, interpupillary 
+distance, and postural control.
+Establish countermeasures to aftereffects. 2 M Research continues on adaptation protocols, medications, 
+behavioral ways to slow symptom progression (e.g., limiting 
+head motion requirements), and technological 
+countermeasures (e.g., earth-referenced display cues.
+Identify factors that contribute to how provocative XR content 
+is, and determine their relative weightings.3 M Some work has been done in this area, highlighting 
+mismatched IPD, visual-vestibular mismatch, vergence- 
+accommodation conflict, and other contributing factors.
+Establish XR content design guidelines that assist in 
+mitigating cybersickness.3 M Experimentation is still common with respect to software for 
+XR. Some guidelines have been offered by leading companies, 
+but these are already beginning to fall out of date.
+Determine feasibility of testing an individual’s sensitivity to 
+sensory depth cues and determine if such sensitivity is 
+associated with more severe cybersickness.3 M While depth cue sensitivity has been evaluated in the lab, eye 
+tracking in the headset may make it feasible to integrate such 
+a metric into XR applications and adapt content accordingly.
+Determine which sensory cues, beyond motion parallax, are 
+sickness-inducing.3 M Work on sensitivity to motion parallax cues provides early 
+indication of feasibility of evaluation at the sensory cue level.
+Establish human adaptation schemes in XR applications. 2 M The time-course of adaptation is little studied apart from 
+coarse details about single session and multi-session 
+habituation.
+Determine specific training methods or exposure protocols 
+required to drive sensory adaptation within XR systems.3 M Some evidence of the appropriate length of exposure and 
+break schedules have been suggested, but these are 
+preliminary at best.
+Determine what makes an individual susceptible to postural 
+instability during XR use.3 M Links between vestibular migraine and postural instability 
+have been observed.
+Determine relationship between presence, cybersickness, and 
+adverse physiological aftereffects.4 M Recent literature has revealed a highly intricate relationship 
+between these factors, and a possible negative correlation 
+between presence and CS. More needs to be done on 
+establishing the modulating effects of task parameters on 
+these factors.
+Determine aspects of sensorimotor processing that are 
+protective of cybersickness proclivity (e.g., ability to reweight 
+sensory cues rapidly).3 M This research is in the early stages, with some evidence of its 
+efficacy.
+Technology Create wide FOV HWDs that support task performance and 
+presence but do not elicit cybersickness.2 S Increases in FOV are inevitable and may reduce or increase 
+cybersickness, depending upon the improvement in 
+symptoms obtained via greater presence versus worsening of 
+symptoms with greater visual flow. Technology should 
+incorporate effective countermeasures and optimal tradeoffs 
+between FOV, presence, and cybersickness.
+Create powerful, lightweight, and untethered AR/VR HWDs. 1 S Devices are much lighter, brighter, and more immersive than 
+before. Yet, size, weight, and unfamiliarity of current devices 
+still contribute to the anxiety and disorientation that 
+commonly underpin user discomfort in XR applications. 
+A “glasses” form factor will help to reduce this psychological 
+barrier.
+Reduce visual latencies. 1 S While end-to-end latency has been much improved due to 
+advances in the tracking and rendering pipeline, visual latency 
+persists.
+Create peripheral devices for senses beyond vision and 
+audition.5 L Sound fidelity has improved markedly and audio based on a 
+head-related transfer function will be a crucial step. Consumer 
+haptic/tactile devices are implemented in a basic sense but 
+scope for improvement remains. Vestibular stimulation is in 
+a very young but exciting stage of development.
+Integrate eye-tracking into XR devices. 2 S Eye tracking will allow user analytics for improved user 
+experience and UI development, reduced workload, and 
+improved graphical fidelity through foveated rendering, 
+possibly reducing vergence accommodation conflict and 
+oculomotor discomfort.
+Evaluation Standardize subjective and objective measurement of 
+aftereffects.1 S Too many symptom scales are used across labs and objective 
+indicators lack specificity.
+Establish product acceptance criteria and systems 
+administration protocols to ensure that cybersickness and 
+aftereffects are minimized.2 S Very few guidelines have been established for XR hardware.
+Develop an understanding of the magnitude of the 
+cybersickness problem and its implications to job 
+performance and career progression.1 S While individual differences in cybersickness have been widely 
+documented, their implication to mass adoption of XR 
+technology have not been carefully examined.
+Develop automated solutions to track cybersickness symptom 
+magnitude during XR exposure.2 M Real-time physiological data have been adopted in the lab but 
+specificity must be improved and transition to the 
+marketplace has yet to occur.
+(Continued ) 1798
+ K. STANNEY ET AL. 
+operational environments. Extensive future research is neces -
+sary to determine such alternative methods for tracking and 
+mitigating the cybersickness issue, and to rule out physiolo -
+gical changes that are not specific to cybersickness (but merely 
+sensitive to cybersickness, arousal, anxiety, and other states). 
+Based on these findings, important considerations to add to 
+the updated R&D agenda include:
+●Develop an understanding of the magnitude of the 
+cybersickness problem and its implications to job per-
+formance and career progression.
+●Develop automated solutions to track cybersickness 
+symptom magnitude during XR exposure.
+8.Updated cybersickness R&D agenda
+Expanding interest and growth of XR technology, and its 
+applications to support the 21st century workforce, transform 
+entertainment, and reshape commerce, necessitates an update 
+of the cybersickness R&D agenda presented by Stanney et al. 
+(1998 ). While progress has been made on action items pre-
+sented in the 1998 agenda (see Table 3), the current review 
+identifies many challenges left to be resolved and puts forth an 
+amended agenda to invest in targeted research to drive toward 
+resolution of the nettlesome cybersickness problem. 
+Achieving this goal is paramount; as the world is eagerly 
+embracing the potential of XR technology, but it faces the 
+daunting challenge of the cybersickness which occurs when 
+normal users are exposed to abnormal multisensory stimuli.
+Building on the R&D Agenda presented by Stanney et al. 
+(1998 ), the current review presents cybersickness challenges 
+associated with general knowledge, XR technology, evaluation, 
+and XR applications that are in need of study. The authors 
+argue for extensive research (priority 1 – urgent and immedi -
+ate resolution needed) to create powerful, lightweight, and 
+untethered AR/VR HWDs, reduce visual latencies, standar -
+dize subjective and objective measurement of aftereffects, with 
+on-line measurement integrated into HWDs considered ideal, 
+and develop an understanding of the magnitude of the cyber -
+sickness problem and its implications to job performance and 
+career progression. In addition, the following are considered 
+critical research challenges (priority 2 – important to resolve 
+in the short to medium term): create a wide FOV that sup-
+ports task performance and presence but does not elicit 
+cybersickness, determine the various drivers of cybersickness 
+and create a predictive model, establish means of determining user susceptibility to cybersickness and aftereffects, establish 
+countermeasures to aftereffects, establish human adaptation 
+schemes in XR applications, develop an automated solution to 
+track cybersickness symptom magnitude during XR exposure, 
+integrate eye-tracking into XR devices, and establish product 
+acceptance criteria and systems administration protocols to 
+ensure that cybersickness and aftereffects will be minimized. 
+From a utilitarian perspective, it is also deemed critically 
+important (priority 2) to identify and evaluate value-added 
+XR enterprise applications that drive mass adoption and cre-
+ate collaborative XR systems. It is our hope that if this 
+updated cybersickness R&D agenda is carefully carried out, 
+it will render cybersickness a challenge of the past.
+Acknowledgements and disclaimers
+This paper is dedicated to the late Robert S. Kennedy, Ph.D., a world-leading 
+expert in motion sickness and many other topics. His tireless work ethic, 
+peerless intellect, and selfless mentorship were a gift to all those whose lives 
+he touched. We would also like to thank Michael Stanney for his assistance 
+with the references. This material is based upon work supported in part by 
+the U.S. Army Medical Research & Development Command (USAMRDC) 
+and the Joint Program Committee - JPC -1 at Fort Detrick, MD under 
+Contract Number: MTEC-W81XWH1990005, National Science 
+Foundation under Award No. CHS-1901423, Facebook Reality, and 
+Google Daydream. The views, opinions and/or findings contained in this 
+publication are those of the authors and do not necessarily reflect the views 
+of the Department of Defense and should not be construed as an official 
+Department of the Army, Department of the Navy, Department of Defense, 
+or the United States Government position, policy or decision unless so 
+designated by other documentation. No official endorsement should be 
+made. Reference herein to any specific commercial products, process, or 
+service by trade name, trademark, manufacturer, or otherwise, does not 
+necessarily constitute or imply its endorsement, recommendation, or favor -
+ing by the U.S. Government. This work was prepared in part by employees 
+of the U.S. Government (Drs. Lawson and Dennison) as part of their official 
+duties. Title 17 U.S.C. §105 provides that ‘Copyright protection under this 
+title is not available for any work of the United States Government.’ Mention 
+of commercial agencies or products does not imply endorsement by the 
+authors.
+References
+Arcioni, B., Palmisano, S., Apthorp, D., & Kim, J. (2018 ). Postural 
+stability predicts the likelihood of cybersickness in active 
+HMD-based virtual reality. Displays , 58, 3–11. https://doi.org/10. 
+1016/j.displa.2018.07.001
+Aykent, B., Merienne, F., Guillet, C., Paillot, D., & Kemeny, A. (2014 ). 
+Motion sickness evaluation and comparison for a static driving simu -
+lator and a dynamic driving simulator. Proceedings of the Institution of 
+Mechanical Engineers, Part D: Journal of Automobile Engineering , 228 
+(7), 818–829. https://doi.org/10.1177/0954407013516101Table 3. (Continued). 
+Research area Action item Priority Term Progress to date
+Applications Identify and evaluate value-added XR applications, both 
+personal and collaborative.2 M Current applications are strongly limited in the extent of user 
+interaction. The advent of low-latency internet will allow 
+major progress on simulated shared-space applications in 
+coming years.
+Develop value-added enterprise XR applications that drive 
+mass adoption.2 S Several award-winning XR applications have been developed, 
+and significant financial power has been devoted to this goal. 
+However, the “value” of XR applications remains too low to 
+overcome the burden of CS for most prospective users.
+Priority (1-high to 5-low). 
+S = Short term (0–1 year); M = Medium term (within 5 years); L = Long term (> 5 years). INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+ 1799 
+Bagce, H. F., Saleh, S., Adamovich, S. V., & Tunik, E. (2011 ). Visuomotor 
+discordance in virtual reality: Effects on online motor control. 2011 
+annual international conference of the IEEE engineering in medicine 
+and biology society , (pp. 7262–7265). Washington, DC: IEEE 
+Computer Society. https://doi.org/10.1109/iembs.2011.6091835 .
+Biocca, F. A., & Rolland, J. P. (1998 ). Virtual eyes can rearrange your 
+body: Adaptation to visual displacement in see-through, 
+head-mounted displays. Presence: Teleoperators and Virtual 
+Environments , 7(3), 262–277. https://doi.org/10.1162/ 
+105474698565703
+Birren, J. E. (1949 ). Motion sickness: Its psychophysiological aspects. 
+A survey report on human factors in undersea warfare , (pp. 
+375–398). Washington, DC: National Research Council.
+Blanke, O. (2012 ). Multisensory brain mechanisms of bodily 
+self-consciousness. Nature Reviews Neuroscience , 13(8), 556–571. 
+https://doi.org/10.1038/nrn3292
+Bonnet, C. T., Faugloire, E., Riley, M. A., Bardy, B. G., & Stoffregen, T. A. 
+(2006 ). Motion sickness preceded by unstable displacements of the 
+center of pressure. Human Movement Science , 25(6), 800–820. https:// 
+doi.org/10.1016/j.humov.2006.03.001
+Bos, J. E. (2011 ). Nuancing the relationship between motion sickness and 
+postural stability. Displays , 32(4), 189–193. https://doi.org/10.1016/j. 
+displa.2010.09.005
+Bowman, D. A., Koller, D., & Hodges, L. F. (1998 ). A methodology for 
+the evaluation of travel techniques for immersive virtual 
+environments. Virtual Reality , 3(2), 120–131. https://doi.org/10.1007/ 
+bf01417673
+Butler, J. S., Smith, S. T., Campos, J. L., & Bulthoff, H. H. (2010 ). 
+Bayesian integration of visual and vestibular signals for heading. 
+Journal of Vision , 10(11), 23. https://doi.org/10.1167/10.11.23
+Carnegie, K., & Rhee, T. (2015 ). Reducing visual discomfort with HMDs 
+using dynamic depth of field. IEEE Computer Graphics and 
+Applications , 35(5), 34–41. https://doi.org/10.1109/mcg.2015.98
+Cevette, M. J., Stepanek, J., Cocco, D., Galea, A. M., Pradhan, G. N., 
+Wagner, L. S., Oakley, S. R., Smith, B. E., Zapala, D. A., & 
+Brookler, K. H. (2012 ). Oculo-vestibular recoupling using galvanic ves-
+tibular stimulation to mitigate simulator sickness. Aviation, Space, and 
+Environmental Medicine , 83(6), 549–555. https://doi.org/10.3357/asem. 
+3239.2012
+Champney, R., Stanney, K. M., Hash, P., Malone, L., Kennedy, R. S., & 
+Compton, D. (2007 ). Recovery from virtual environment exposure: 
+Expected time-course of symptoms and potential readaptation 
+mechanisms. Human Factors, 49(3), 491–506.
+Chang, C.-H., Chen, F.-C., Kung, W.-C., & Stoffregen, T. A. (2017 ). Effects 
+of physical driving experience on body movement and motion sickness 
+during virtual driving. Aerospace Medicine and Human Performance , 88 
+(11), 985–992. https://doi.org/10.3357/amhp.4893.2017
+Chang, C.-H., Pan, -W.-W., Tseng, L.-Y., & Stoffregen, T. A. (2012 ). 
+Postural activity and motion sickness during video game play in 
+children and adults. Experimental Brain Research , 217(2), 299–309. 
+https://doi.org/10.1007/s00221-011-2993-4
+Chemero, A. (2011 ). Radical embodied cognitive science . MIT Press.
+Chen, Y.-C., Dong, X., Chen, F.-C., & Stoffregen, T. A. (2012 ). Control of 
+a virtual avatar influences postural activity and motion sickness. 
+Ecological Psychology , 24(4), 279–299. https://doi.org/10.1080/ 
+10407413.2012.726181
+Chen, Y.-C., Duann, J.-R., Chuang, S.-W., Lin, C.-L., Ko, L.-W., Jung, T.- 
+P., & Lin, C.-T. (2010 ). Spatial and temporal EEG dynamics of motion 
+sickness. NeuroImage , 49(3), 2862–2870. https://doi.org/10.1016/j.neu 
+roimage.2009.10.005
+Chung, W., & Barnett-Cowan, M. (2019 ). Perceived timing of passive 
+self-motion relative to auditory stimuli with and without vision. 
+Journal of Vision , 19(10), 301b. https://doi.org/10.1167/19.10.301b
+Clower, D. M., & Boussaoud, D. (2000 ). Selective use of perceptual recali -
+bration versus visuomotor skill acquisition. Journal of Neurophysiology , 
+84(5), 2703–2708. https://doi.org/10.1152/jn.2000.84.5.2703
+Condino, S., Carbone, M., Piazza, R., Ferrari, M., & Ferrari, V. (2020 ). 
+Perceptual limits of optical see-through visors for augmented reality 
+guidance of manual tasks. IEEE Transactions on Biomedical Engineering , 67(2), 411–419. https://doi.org/10.1109/tbme.2019. 
+2914517
+Cosmides, L., & Tooby, J. (1987 ). From evolution to behavior: 
+Evolutionary psychology as the missing link. In J. Dupre (Ed.), The 
+latest on the best: Essays on evolution and optimality (pp. 277–306). 
+The MIT Press.
+Davis, S., Nesbitt, K., & Nalivaiko, E. (2015 , January). Comparing the 
+onset of cybersickness using the Oculus Rift and two virtual roller 
+coasters. Proceedings of the 11th Australasian Conference on 
+Interactive Entertainment (IE 2015) , 167, 3–14. https://crpit.scem.wes 
+ternsydney.edu.au/Vol167.html
+Denise, P., Vouriot, A., Normand, H., Golding, J. F., & Gresty, M. A. 
+(2009 ). Effect of temporal relationship between respiration and body 
+motion on motion sickness. Autonomic Neuroscience , 151(2), 
+142–146. https://doi.org/10.1016/j.autneu.2009.06.007
+Dennison, M., D’Zmura, M., Harrison, A., Lee, M., & Raglin, A. (2019 , 
+May). Improving motion sickness severity classification through 
+multi-modal data fusion. In Artificial intelligence and machine learning 
+for multi-domain operations applications II (Vol. 11006, p. 110060T). 
+Baltimore, Maryland: International Society for Optics and Photonics.
+Dennison, M. S., & D’Zmura, M. (2017 ). Cybersickness without the 
+wobble: Experimental results speak against postural instability 
+theory. Applied Ergonomics , 58, 215–223. https://doi.org/10.1016/j. 
+apergo.2016.06.014
+Dennison, M. S., Wisti, A. Z., & D’Zmura, M. (2016 ). Use of physiolo -
+gical signals to predict cybersickness. Displays , 44, 42–52. https://doi. 
+org/10.1016/j.displa.2016.07.002
+Dong, X., Yoshida, K., & Stoffregen, T. A. (2011 ). Control of a virtual 
+vehicle influences postural activity and motion sickness. Journal of 
+Experimental Psychology: Applied , 17(2), 128–138. https://doi.org/10. 
+1037/a0024097
+Dunn, J. (2017 , March 22). Augmented reality will become a $50 billion 
+business in 5 years, analysts say. Business Insider. https://www.busines 
+sinsider.com/augmented-reality-virtual-reality-sales-idc-chart-2017-3
+Dużmańska, N., Strojny, P., & Strojny, A. (2018 ). Can simulator sickness be 
+avoided? A review on temporal aspects of simulator sickness. Frontiers in 
+Psychology , 9(2132). https://doi.org/10.3389/fpsyg.2018.02132
+Dziuda, Ł., Biernacki, M. P., Baran, P. M., & Truszczyński, O. E. (2014 ). The 
+effects of simulated fog and motion on simulator sickness in a driving 
+simulator and the duration of after-effects. Applied Ergonomics , 45(3), 
+406–412. https://doi.org/10.1016/j.apergo.2013.05.003
+Ebenholtz, S. M., Cohen, M. M., & Linder, B. J. (1994 ). The possible role 
+of nystagmus in motion sickness: A hypothesis. Aviation, Space, & 
+Environmental Medicine , 65(11), 1032–1035.
+Fernandes, A. S., & Feiner, S. K. (2016 ). Combating VR sickness through 
+subtle dynamic field-of-view modification. IEEE symposium on 3D 
+user interfaces 201-210 . Washington, DC: IEEE Computer Society.
+Fetsch, C. R., DeAngelis, G. C., & Angelaki, D. E. (2010 ). Visual- 
+vestibular cue integration for heading perception: Applications of 
+optimal cue integration theory. European Journal of Neuroscience , 31 
+(10), 1721–1729. https://doi.org/10.1111/j.1460-9568.2010.07207
+Fidopiastis, C. M., Meyer, C., Fuhrman, K., & Rolland, J. P. (2003 ). 
+Quantitative assessment of visual acuity in projection head-mounted 
+displays. In C. E. Rash & E. R. Colin (Eds.), Proceedings of the SPIE 
+Aerosense: Helmet- and Head-Mounted Displays VIII: Technologies and 
+Applications , (vol. 7, pp. 399–406). https://doi.org/10.1117/12.486377
+Fidopiastis, C. M. (2006 ). User-centered virtual environment assessment 
+and design for cognitive rehabilitation applications . [Unpublished doc-
+toral dissertation]. University of Central Florida.
+Fidopiastis, C. M., Rizzo, A. A., & Rolland, J. P. (2010 ). User-centered 
+virtual environment design for virtual rehabilitation. Journal of 
+NeuroEngineering and Rehabilitation , 7(1), 11. https://doi.org/10. 
+1186/1743-0003-7-11
+Fulvio, J. M., Ji, M., & Rokers, B. (2020 ). Variation in visual sensitivity predicts 
+motion sickness in virtual reality. bioRxiv 488817 . https://doi.org/10.1101/ 
+488817
+Gallagher, M., & Ferrè, E. R. (2018 ). Cybersickness: A multisensory 
+integration perspective. Multisensory Research , 31(7), 645–674. 
+https://doi.org/10.1163/22134808-201812931800
+ K. STANNEY ET AL. 
+Gallagher, S. (2005 ). How the body shapes the mind . Oxford University 
+Press.
+Gálvez-García, G., Hay, M., & Gabaude, C. (2014 ). Alleviating simulator 
+sickness with galvanic cutaneous stimulation. Human Factors , 57(4), 
+649–657. https://doi.org/10.1177/0018720814554948
+Gibson, J. J. (1966 ). The senses considered as perceptual systems . 
+Greenwood Press.
+Gibson, J. J. (1979 ). The ecological approach to visual perception . Boston: 
+Houghton Mifflin.
+Golding, J. F., & Gresty, M. A. (2005 ). Motion sickness. Current Opinion 
+in Neurology , 18(1), 29–34. https://doi.org/10.1097/00019052- 
+200502000-00007
+Graybiel, A., & Knepton, J. (1976 ). Sopite syndrome: A sometimes sole 
+manifestation of motion sickness. Aviation, Space, and Environmental 
+Medicine , 47(8), 873–882.
+Gruen, R., Ofek, E., Steed, A., Gal, R., Sinclair, M., & Gonzalez-Franco, 
+M. (2020 ). Measuring system visual latency through cognitive latency 
+on video see-through AR devices. 2020 IEEE Conference on Virtual 
+Reality and 3D User Interfaces (VR) , 791–799. https://doi.org/10.1109/ 
+vr46266.2020.1580498468656
+Hale, K. S., & Stanney, K. M. (Eds.). (2014 ). Handbook of virtual envir -
+onments: Design, implementation, and applications (2nd edition). CRC 
+Press.
+Howard, I. P. (1982 ). Human visual orientation . John Wiley & Sons.
+Hughes, C. L., Fidopiastis, C. M., Stanney, K. M., Bailey, P. S., Ruiz, E., 
+Frye, D. L., & Karluk, F. J. (2020 , under review). Cybersickness profile 
+associated with long-duration AR exposure . Frontiers in Virtual Reality.
+IDC. (2020 , March 18). AR and VR headsets will see shipments decline in 
+the near term due to COVID-19, but long-term outlook is positive, 
+according to IDC. The Premier Global Market Intelligence Company. 
+https://www.idc.com/getdoc.jsp?containerId=prUS46143720
+Kennedy, R. S., Lane, N. E., Berbaum, K. S., & Lilienthal, M. G. (1993 ). 
+Simulator sickness questionnaire: An enhanced method for quantifying 
+simulator sickness. The International Journal of Aviation Psychology , 3(3), 
+203–220. https://doi.org/10.1207/s15327108ijap0303_3
+Kennedy, R. S., Stanney, K. M., & Dunlap, W. P. (2000 ). Duration and 
+exposure to virtual environments: Sickness curves during and across 
+sessions. Presence: Teleoperators & Virtual Environments , 9(5), 
+463–472. https://doi.org/10.1162/105474600566952
+Keshavarz, B., Hecht, H., & Lawson, B. D. (2014 ). Visually-induced motion 
+sickness: Causes, characteristics, and countermeasures. In K. S. Hale & 
+K. M. Stanney (Eds.), Handbook of virtual environments: Design, imple -
+mentation, and applications (2nd ed., pp. 647–698). CRC Press.
+Keshavarz, B., & Hecht, H. (2014 ). Pleasant music as a countermeasure 
+against visually induced motion sickness. Applied Ergonomics , 45(3), 
+521–527. https://doi.org/10.1016/j.apergo.2013.07.009
+Keshavarz, B., Stelzmann, D., Paillard, A., & Hecht, H. (2015 ). Visually 
+induced motion sickness can be alleviated by pleasant odors. 
+Experimental Brain Research , 233(5), 1353–1364. https://doi.org/10. 
+1007/s00221-015-4209-9
+Kim, Y. Y., Kim, H. J., Kim, E. N., Ko, H. D., & Kim, H. T. (2005 ). 
+Characteristic changes in the physiological components of 
+cybersickness. Psychophysiology , 42(5), 616–625. https://doi.org/10. 
+1111/j.1469-8986.2005.00349.x
+Kitazaki, M. (2013 ). Effects of retinal position on the visuo-motor adap -
+tation of visual stability in a virtual environment. I-Perception , 4(4), 
+242–252. https://doi.org/10.1068/i0534
+Klüver, M., Herrigel, C., Preuß, S., Schöner, H. P., & Hecht, H. (2015 ). 
+Comparing the incidence of simulator sickness in five different driv-
+ing simulators. In Proceedings of driving simulation conference. 
+Tübingen, Germany. https://www.researchgate.net/profile/Malte_ 
+Kluever/publication/279950289_Comparing_the_Incidence_of_ 
+Simulator_Sickness_in_Five_Different_Driving_Simulators/links/ 
+5655905c08ae4988a7b0b731/Comparing-the-Incidence-of-Simulator- 
+Sickness-in-Five-Different-Driving-Simulators.pdf
+Kolasinski, E. M., & U.S. Army Research Institute For The Behavioral 
+And Social Sciences. (1995 ). Simulator sickness in virtual environments 
+(No. ARI-TR-1027).
+Koslucher, F., Haaland, E., & Stoffregen, T. A. (2015 ). Sex differences in 
+visual performance and postural sway precede sex differences in visually induced motion sickness. Experimental Brain Research , 234 
+(1), 313–322. https://doi.org/10.1007/s00221-015-4462-y
+Koslucher, F., Munafo, J., & Stoffregen, T. A. (2016 ). Postural sway in 
+men and women during nauseogenic motion of the illuminated 
+environment. Experimental Brain Research , 234(9), 2709–2720. 
+https://doi.org/10.1007/s00221-016-4675-8
+Kruijff, E., Swan, J. E., II, & Feiner, S. (2010 ). Perceptual issues in 
+augmented reality revisited. The IEEE international symposium on 
+mixed and augmented reality (ISMAR 2010) 3–12. Washington, DC: 
+IEEE Computer Society.
+Kuiper, O. X., Bos, J. E., Diels, C., & Cammaerts, K. (2019 ). Moving base 
+driving simulators’ potential for carsickness research. Applied 
+Ergonomics , 81, 102889. https://doi.org/10.1016/j.apergo.2019.102889
+Lackner, J. R. (2014 ). Motion sickness: More than nausea and vomiting. 
+Experimental Brain Research , 232(8), 2493–2510. https://doi.org/10. 
+1007/s00221-014-4008-8
+Lackner, J. R., & Graybiel, A. (1981 ). Variations in gravtoinertial force 
+level affect the gain of the vestibulo-ocular reflex: Implications for the 
+etiology of space motion sickness. Aviation, Space, & Environmental 
+Medicine , 52(3), 154–158.
+Lawson, B. D. (2014 ). Motion sickness symptomatology and origins. In 
+K. S. Hale & K. M. Stanney (Eds.), Handbook of virtual environments: 
+Design, implementation, and applications (2nd ed., pp. 531–600). CRC 
+Press.
+Lawson, B. D., & Riecke, B. E. (2014 ). The perception of body motion. In 
+K. S. Hale & K. M. Stanney (Eds.), Handbook of virtual environments: 
+Design, implementation, and applications (2nd ed., pp. 163–196). CRC 
+Press.
+Li, R., Walter, H., Curry, C., Rath, R., Peterson, N., & Stoffregen, T. A. 
+(2018 ). Postural time-to-contact as a precursor of visually induced 
+motion sickness. Experimental Brain Research , 236(6), 1631–1641. 
+https://doi.org/10.1007/s00221-018-5246-y
+Lim, Y.-H., Kim, J.-S., Lee, H.-W., & Kim, S.-H. (2018 ). Postural instabil -
+ity induced by visual motion stimuli in patients with vestibular 
+migraine. Frontiers in Neurology , 9(443). https://doi.org/10.3389/ 
+fneur.2018.00433
+Lin, C. T., Chuang, S. W., Chen, Y. C., Ko, L. W., Liang, S.-F., & Jung, T.- 
+P. (2007 ). EEG effects of motion sickness induced in a dynamic virtual 
+reality environment. Proceedings of the IEEE Engineering in Medicine 
+and Biological Society , 2, 3872–3875. https://doi.org/10.1109/IEMBS. 
+2007.4353178
+Lin, J. J.-W., Duh, H. B. L., Parker, D. E., Abi-Rached, H., & Furness, T. A. 
+(2002 ). Effects of field of view on presence, enjoyment, memory, and 
+simulator sickness in a virtual environment. Proceedings IEEE Virtual 
+Reality (pp. 164–171). https://doi.org/10.1109/VR.2002.996519
+Linden, A., & Fenn, J. (2003 ). Understanding Gartner’s hype cycles 
+(Strategic Analysis Report Nº R-20-1971). Gartner, Inc, pp. 88.
+Lubeck, A. J., Bos, J. E., & Stins, J. F. (2015 ). Motion in images is essential 
+to cause motion sickness symptoms, but not to increase postural sway. 
+Displays , 38, 55–61. https://doi.org/10.1016/j.displa.2015.03.001
+McCauley, M. E., & Sharkey, T. J. (1992 ). Cybersickness: Perception of 
+self-motion in virtual environments. Presence: Teleoperators and Virtual 
+Environments , 1(3), 311–318. https://doi.org/10.1162/pres.1992.1.3.311
+Medina, J., & Cason, S. (2017 ). No evidential value in samples of 
+transcranial direct current stimulation (tDCS) studies of cognition 
+and working memory in healthy populations. Cortex , 94, 131–141. 
+https://doi.org/10.1016/j.cortex.2017.06.021
+Merhi, O., Faugloire, E., Flanagan, M., & Stoffregen, T. A. (2007 ). Motion 
+sickness, console video games, and head-mounted displays. Human 
+Factors , 49(5), 920–934. https://doi.org/10.1518/001872007x230262
+Middleton, V. E., O’Keefe, J., & McIntyre, R. T. (1993 ). Virtual reality 
+and analytical simulation of the soldier. Proceedings of 1993 winter 
+simulation conference-(WSC’93) 1048–1052. Washington, DC: IEEE 
+Computer Society.
+Minarik, T., Berger, B., Althaus, L., Bader, V., Biebl, B., Brotzeller, F., 
+Leitner, M., Jesteadt, L., Kalweit, L., Leitner, M., Linke, F., 
+Nabielska, N., Reiter, T., Schmitt, D., Spraetz, A., Sauseng, P., & 
+Fusban, T. (2016 ). The importance of sample size for reproducibility 
+of tDCS effects. Frontiers in Human Neuroscience , 10(453). https://doi. 
+org/10.3389/fnhum.2016.00453INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+ 1801 
+Money, K. E. (1990 ). Motion sickness and evolution. In G. H. Crampton 
+(Ed.), Motion and Space Sickness (pp. 1–8). CRC Press.
+Money, K. E., & Cheung, B. S. (1983 ). Another function of the inner ear: 
+Facilitation of the emetic response to poisons. Aviation, Space, & 
+Environmental Medicine , 54(3), 208–211.
+Moss, J. D., & Muth, E. R. (2011 ). Characteristics of head-mounted 
+displays and their effects on simulator sickness. Human Factors, 53 
+(3), 308–319.
+Munafo, J., Diedrick, M., & Stoffregen, T. A. (2017 ). The virtual reality 
+head-mounted display Oculus Rift induces motion sickness and is 
+sexist in its effects. Experimental Brain Research, 235, 889–901. 
+https://doi.org/10.1007/s00221-016-4846-7
+Ohyama, S., Nishiike, S., Watanabe, H., Matsuoka, K., Akizuki, H., 
+Takeda, N., & Harada, T. (2007 ). Autonomic responses during motion 
+sickness induced by virtual reality. Auris Nasus Larynx , 34(3), 
+303–306. https://doi.org/10.1016/j.anl.2007.01.002
+Oman, C. M. (1982 ). A heuristic mathematical model for the dynamics 
+of sensory conflict and motion sickness hearing in classical musicians. 
+Acta Oto-Laryngologica , 94(sup392), 4–44. https://doi.org/10.3109/ 
+00016488209108197
+Oman, C. M. (1990 ). Motion sickness: A synthesis and evaluation of the 
+sensory conflict theory. Canadian Journal of Physiology and 
+Pharmacology , 68(2), 294–303. https://doi.org/10.1139/y90-044
+Oman, C. M. (1998 ). Sensory conflict theory and space sickness: Our 
+changing perspective. Journal of Vestibular Research , 8(1), 51–56. 
+https://doi.org/10.3233/ves-1998-8107
+Oman, C. M. (2012 ). Are evolutionary hypotheses for motion sickness 
+“just-so” stories? Journal of Vestibular Research , 22(2,3), 117–127. 
+https://doi.org/10.3233/ves-2011-0432
+Oman, C. M., & Cullen, K. E. (2014 ). Brainstem processing of vestibular 
+sensory exafference: Implications for motion sickness etiology. 
+Experimental Brain Research , 232(8), 2483–2492. https://doi.org/10.1007/ 
+s00221-014-3973-2
+Palmisano, S., Bonato, F., Bubka, A., & Folder, J. (2007 ). Vertical display 
+oscillation effects on forward vection and simulator sickness. Aviation, 
+Space, and Environmental Medicine , 78(10), 951–956. https://doi.org/ 
+10.3357/asem.2079.2007
+Parise, C. V., & Ernst, M. O. (2016 ). Correlation detection as a general 
+mechanism for multisensory integration. Nature Communications , 7 
+(1), 11543. https://doi.org/10.1038/ncomms11543
+Pascual-Leone, A., Amedi, A., Fregni, F., & Merabet, L. B. (2005 ). The 
+plastic human brain cortex. Annual Review of Neuroscience, 28, 377– 
+401. https://doi.org/10.1146/annurev.neuro.27.070203.144216
+Petrock, V. (2020 , April 7). US virtual and augmented reality users 2020 . 
+eMarketer. https://www.emarketer.com/content/us-virtual-and- 
+augmented-reality-users-2020 .
+Pettijohn, K. A., Geyer, D., Gomez, J., Becker, W. J., & Biggs, A. T. (2018 ). 
+Postural instability and simulator seasickness. Aerospace Medicine and 
+Human Performance , 89(7), 634–641. https://doi.org/10.3357/amhp.4998. 
+2018
+Ponder, E., & Kennedy, W. P. (1927 ). On the act of blinking. Quarterly 
+Journal of Experimental Physiology , 18(2), 89–110. https://doi.org/10. 
+1113/expphysiol.1927.sp000433
+Prothero, J. D., & Parker, D. E. (2003 ). A unified approach to presence and 
+motion sickness. In L. J. Hettinger & M. W. Haas (Eds.), Virtual and 
+adaptive environments: Applications, Implications, and Human 
+Performance Issues (pp. 47–66). Lawrence Erlbaum Associates, Inc.
+Reason, J. T. (1978 ). Motion sickness adaptation: A neural mismatch 
+model. Journal of the Royal Society of Medicine , 71(11), 819–829. 
+https://doi.org/10.1177/014107687807101109
+Reason, J. T., & Brand, J. J. (1975 ). Motion sickness . Academic Press.
+Rebenitsch, L., & Owen, C. (2016 ). Review on cybersickness in applica -
+tions and visual displays. Virtual Reality , 20(2), 101–125. https://doi. 
+org/10.1007/s10055-016-0285-9
+Reed, C., McGoldrick, J., Shackelford, J. R., & Fidopiastis, C. (2004 ). Are 
+human bodies represented differently from other objects? Experience 
+shapes object representations. Visual Cognition , 11(4), 523–550. 
+https://doi.org/10.1080/13506280344000428
+Reed-Jones, R. J., Reed-Jones, J. G., Trick, L. M., & Vallis, L. A. (2007 ). 
+Can galvanic vestibular stimulation reduce simulator adaptation syndrome? Proceedings of the 4th International Driving Symposium 
+on Human Factors in Driver Assessment Training and Vehicle Design , 
+534–540. https://doi.org/10.17077/drivingassessment.1288
+Riccio, G. E., & Stoffregen, T. A. (1988 ). Affordances as constraints on 
+the control of stance. Human Movement Science , 7(2–4), 265–300. 
+https://doi.org/10.1016/0167-9457(88)90014-0
+Riccio, G. E., & Stoffregen, T. A. (1991 ). An ecological theory of motion 
+sickness and postural instability. Ecological Psychology , 3(3), 195–240. 
+https://doi.org/10.1207/s15326969eco0303_2
+Risi, D., & Palmisano, S. (2019 ). Effects of postural stability, active control, 
+exposure duration and repeated exposures on HMD induced 
+cybersickness. Displays , 60, 9–17. https://doi.org/10.1016/j.displa.2019.08. 
+003
+Rolnick, A., & Lubow, R. E. (1991 ). Why is the driver rarely motion sick? 
+The role of controllability in motion sickness. Ergonomics , 34(7), 
+867–879. https://doi.org/10.1080/00140139108964831
+Rossetti, Y., Rode, G., Farnè, A., & Rossetti, A. (2005 ). Implicit body 
+representations in action. Advances In Consciousness Research , 62, 
+111–125. https://doi.org/10.1075/aicr.62.08ros
+Sang, F. D. Y. P., Billar, J. P., Golding, J. F., & Gresty, M. A. 
+(2006 ). Behavioral methods of alleviating motion sickness: 
+Effectiveness of controlled breathing and a music audiotape. 
+Journal of Travel Medicine , 10(2), 108–111. https://doi.org/10. 
+2310/7060.2003.31768
+Sekiyama, K., Miyauchi, S., Imaruoka, T., Egusa, H., & Tashiro, T. 
+(2000 ). Body image as a visuomotor transformation device revealed 
+in adaptation to reversed vision. Nature , 407(6802), 374–377. https:// 
+doi.org/10.1038/35030096
+Serge, S. R., & Moss, J. D. (2015 ). Simulator sickness and the Oculus 
+Rift. Proceedings of the Human Factors and Ergonomics Society 
+Annual Meeting , 59(1), 761–765. https://doi.org/10.1177/ 
+1541931215591236
+Smart, L. J., Stoffregen, T. A., & Bardy, B. G. (2002 ). Visually induced 
+motion sickness predicted by postural instability. Human Factors , 44 
+(3), 451–465. https://doi.org/10.1518/0018720024497745
+Stanney, K., Fidopiastis, C., & Foster, L. (2020 ). Virtual reality is sexist: 
+But it does not have to be. Frontiers in Robotics and AI, 7(4). https:// 
+doi.org/10.3389/frobt.2020.00004
+Stanney, K., Salvendy, G., Deisinger, J., DiZio, P., Ellis, S., 
+Ellison, J., … Witmer, B. (1998 ). Aftereffects and sense of pre-
+sence in virtual environments: Formulation of a research and 
+development agenda. International Journal of Human-Computer 
+Interaction , 10(2), 135–187. https://doi.org/10.1207/ 
+s15327590ijhc1002_3
+Stanney, K. M., Kennedy, R. S., & Hale, K. S. (2014 ). Virtual environ -
+ments usage protocols. In K. S. Hale & K. M. Stanney (Eds.), 
+Handbook of Virtual Environments: Design, Implementation, and 
+Applications (2nd ed., pp. 797–809). CRC Press.
+Stanney, K. M., Nye, H., Haddad, S., Padron, C. K., Hale, K. S., & 
+Cohn, J. V. (2020 , in press). eXtended reality (XR) environments. In 
+G. Salvendy & W. Karwowski (Eds.), Handbook of human factors and 
+ergonomics . (5th) ed. John Wiley & Sons.
+Stanney, K. M., Hale, K. S., Nahmens, I., & Kennedy, R. S. (2003 ). What 
+to expect from immersive virtual environment exposure: Influences of 
+gender, body mass index, and past experience. Human Factors , 45(3), 
+504–520. https://doi.org/10.1518/hfes.45.3.504.27254
+Stanney, K. M., & Kennedy, R. S. (1998 ). Aftereffects from virtual 
+environment exposure: How long do they last? Proceedings of the 
+Human Factors and Ergonomics Society Annual Meeting , 42(21), 
+1476–1480. https://doi.org/10.1177/154193129804202103
+Stanney, K. M., Kennedy, R. S., Drexler, J. M., & Harm, D. L. (1999 ). 
+Motion sickness and proprioceptive aftereffects following virtual 
+environment exposure. Applied Ergonomics , 30(1), 27–38. https://doi. 
+org/10.1016/s0003-6870(98)00039-8
+Stoffregen, T. A. (2011 ). Motion sickness considered as a movement 
+disorder. Movement & Sport Sciences , 74(3), 19. https://doi.org/10. 
+3917/sm.074.0019
+Stoffregen, T. A., & Bardy, B. G. (2001 ). On specification and the senses. 
+Behavioral and Brain Sciences , 24(2), 195–213. https://doi.org/10. 
+1017/s0140525x010039461802
+ K. STANNEY ET AL. 
+Stoffregen, T. A., Chang, C.-H., Chen, F.-C., & Zeng, W.-J. (2017 ). 
+Effects of decades of physical driving on body movement and motion 
+sickness during virtual driving. Plos One, 12(11), e0187120. https:// 
+doi.org/10.1371/journal.pone.0187120
+Stoffregen, T. A., Chen, F.-C., Varlet, M., Alcantara, C., & Bardy, B. G. 
+(2013 ). Getting your sea legs. PLoS ONE , 8(6), e66949. https://doi.org/ 
+10.1371/journal.pone.0066949
+Stoffregen, T. A., Chen, Y.-C., & Koslucher, F. C. (2014 ). Motion control, 
+motion sickness, and the postural dynamics of mobile devices. 
+Experimental Brain Research , 232(4), 1389–1397. https://doi.org/10. 
+1007/s00221-014-3859-3
+Stoffregen, T. A., Faugloire, E., Yoshida, K., Flanagan, M. B., & Merhi, O. 
+(2008 ). Motion sickness and postural sway in console video games. 
+Human Factors , 50(2), 322–331. https://doi.org/10.1518/ 
+001872008x250755
+Stoffregen, T. A., Hettinger, L. J., Haas, M. W., Roe, M. M., & Smart, L. J. 
+(2000 ). Postural instability and motion sickness in a fixed-base flight 
+simulator. Human Factors, 42(3) 458–469. https://doi.org/10.1518/ 
+001872000779698097
+Stoffregen, T. A., Mantel, B., & Bardy, B. G. (2017 ). The senses consid -
+ered as one perceptual system. Ecological Psychology , 29(3), 165–197. 
+https://doi.org/10.1080/10407413.2017.1331116
+Stoffregen, T. A., & Riccio, G. E. (1988 ). An ecological theory of orienta -
+tion and the vestibular system. Psychological Review , 95(1), 3–14. 
+https://doi.org/10.1037/0033-295x.95.1.3
+Stoffregen, T. A., & Riccio, G. E. (1991 ). An ecological critique of the 
+sensory conflict theory of motion sickness. Ecological Psychology , 3(3), 
+159–194. https://doi.org/10.1207/s15326969eco0303_1
+Stoffregen, T. A., & Smart, L. J. (1998 ). Postural instability precedes 
+motion sickness. Brain Research Bulletin , 47(5), 437–448. https://doi. 
+org/10.1016/s0361-9230(98)00102-6
+Stoffregen, T. A., Yoshida, K., Villard, S., Scibora, L., & Bardy, B. G. 
+(2010 ). Stance width influences postural stability and motion sickness. 
+Ecological Psychology , 22(3), 169–191. https://doi.org/10.1080/ 
+10407413.2010.496645
+Stone, W.B. (2017 ). Psychometric evaluation of the Simulator Sickness 
+Questionnaire as a measure of cybersickness . [Unpublished doctoral dis-
+sertation]. Iowa State University. https://doi.org/10.31274/etd-180810- 
+5050
+Takeuchi, N., Mori, T., Suzukamo, Y., & Izumi, S.-I. (2018 ). Modulation 
+of excitability in the temporoparietal junction relieves virtual reality 
+sickness. Cyberpsychology, Behavior, and Social Networking , 21(6), 
+381–387. https://doi.org/10.1089/cyber.2017.0499
+Treisman, M. (1977 ). Motion sickness: An evolutionary hypothesis. 
+Science , 197(4302), 493–495. https://doi.org/10.1126/science.301659
+Villard, S. J., Flanagan, M. B., Albanese, G. M., & Stoffregen, T. A. 
+(2008 ). Postural instability and motion sickness in a virtual moving 
+room. Human Factors , 50(2), 332–345. https://doi.org/10.1518/ 
+001872008x250728
+Vovk, A., Wild, F., Guest, W., & Kuula, T. (2018 ). Simulator sickness in 
+augmented reality training using the Microsoft HoloLens. In 
+Proceedings of the 2018 CHI Conference on Human Factors in 
+Computing Systems (pp. 1–9). Montreal QC Canada. https://doi.org/ 
+10.1145/3173574.3173783
+Wada, T., Konno, H., Fujisawa, S., & Doi, S. (2012 ). Can passengers’ 
+active head tilt decrease the severity of carsickness? Human Factors , 54 
+(2), 226–234. https://doi.org/10.1177/0018720812436584
+Walter, H. J., Li, R., Munafo, J., Curry, C., Peterson, N., & Stoffregen, T. A. 
+(2019 ). Unstable coupling of body sway with imposed motion precedes 
+visually induced motion sickness. Human Movement Science , 64, 389–397. 
+https://doi.org/10.1016/j.humov.2019.03.006
+Wang, J., & Lewis, R. F. (2016 ). Contribution of intravestibular sensory 
+conflict to motion sickness and dizziness in migraine disorders. Journal of Neurophysiology , 116(4), 1586–1591. https://doi.org/10. 
+1152/jn.00345.2016
+Wang, X., & Perry, A. C. (2006 ). Metabolic and physiologic responses to video 
+game play in 7- to 10-year-old boys. Archives of Pediatrics & Adolescent 
+Medicine , 160(4), 411. https://doi.org/10.1001/archpedi.160.4.411
+Watt, D. G. D. (1983 ). Sensory and motor conflict in motion sickness. 
+Brain, Behavior and Evolution , 23(1–2), 32–35. https://doi.org/10. 
+1159/000121485
+Webster, M. A. (2015 ). Visual adaptation. Annual Review of Vision 
+Science , 1(1), 547–567. https://doi.org/10.1146/annurev-vision 
+-082114-035509
+Weech, S., Kenny, S., & Barnett-Cowan, M. (2019 ). Presence and cyber -
+sickness in virtual reality are negatively related: A review. Frontiers in 
+Psychology , 10(158). https://doi.org/10.3389/fpsyg.2019.00158
+Weech, S., Kenny, S., Lenizky, M., & Barnett-Cowan, M. (2020a ). 
+Narrative and gaming experience interact to affect presence 
+and cybersickness in virtual reality. International Journal of 
+Human-Computer Studies , 138, 102398. https://doi.org/10. 
+1016/j.ijhcs.2020.102398
+Weech, S., Moon, J., & Troje, N. F. (2018a ). Influence of bone-conducted 
+vibration on simulator sickness in virtual reality. Plos One, 13(3), 
+e0194137. https://doi.org/10.1371/journal.pone.0194137
+Weech, S., & Troje, N. F. (2017 ). Vection latency is reduced by 
+bone-conducted vibration and noisy galvanic vestibular stimulation. 
+Multisensory Research , 30(1), 65–90. https://doi.org/10.1163/22134808- 
+00002545
+Weech, S., Varghese, J. P., & Barnett-Cowan, M. (2018 ). Estimating the 
+sensorimotor components of cybersickness. Journal of Neurophysiology, 
+120(5), 2201–2217.
+Weech, S., Varghese, J. P., & Barnett-Cowan, M. (2018b ). Estimating the 
+sensorimotor components of cybersickness. Journal of Neurophysiology , 
+120(5), 2201–2217. https://doi.org/10.1152/jn.00477.2018
+Weech, S., Wall, T., & Barnett-Cowan, M. (2020b ). Reduction of cyber -
+sickness during and immediately following noisy galvanic vestibular 
+stimulation. Experimental Brain Research , 238(2), 427–437. https:// 
+doi.org/10.1007/s00221-019-05718-5
+Welch, R. B. (1978 ). Perceptual modification : Adapting to altered sensory 
+environments . Academic Press.
+Welch, R. B. (1986 ). Adaptation of space perception. In K. R. Boff, 
+L. Kaufman, & J. P. Thomas (Eds.), Handbook of perception and 
+human performance (pp. 24). John Wiley and Sons.
+Welch, R. B., & Mohler, B. J. (2014 ). Adapting to virtual environments. In 
+K. S. Hale & K. M. Stanney (Eds.), Handbook of virtual environments: 
+Design, implementation, and applications (pp. 627–646). CRC Press.
+Welch, R. B., & Sampanes, A. C. (2008 ). Adapting to virtual environ -
+ments: Visual-motor skill acquisition versus perceptual recalibration. 
+Displays , 29(2), 152–158. https://doi.org/10.1016/j.displa.2007.09.013
+Weser, V., & Proffitt, D. R. (2019 ). Tool embodiment: The tool’s output 
+must match the user’s input. Frontiers in Human Neuroscience , 12 
+(537). https://doi.org/10.3389/fnhum.2018.00537
+Widdowson, C., Becerra, I., Merrill, C., Wang, R. F., & LaValle, S. 
+(2019 ). Assessing postural instability and cybersickness through 
+linear and angular displacement. Human Factors , 
+001872081988125. https://doi.org/10.1177/0018720819881254
+Wong, K.-F. (2007 ). Neural circuit dynamics underlying accumulation of 
+time-varying evidence during perceptual decision making. Frontiers in 
+Computational Neuroscience , 1(6). https://doi.org/10.3389/neuro.10.006. 
+2007
+Yates, B. J., Catanzaro, M. F., Miller, D. J., & McCall, A. A. (2014 ). 
+Integration of vestibular and emetic gastrointestinal signals that pro-
+duce nausea and vomiting: Potential contributions to motion sickness. 
+Experimental Brain Research , 232(8), 2455–2469. https://doi.org/10. 
+1007/s00221-014-3937-6INTERNATIONAL JOURNAL OF HUMAN–COMPUTER INTERACTION
+ 1803 

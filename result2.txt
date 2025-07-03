@@ -1,0 +1,36 @@
+Here are all the sentences from the provided text that contain the keyword "cybersickness":
+
+1. Unfortunately, ‘cybersickness’ remains as a common user problem that must be overcome if mass adoption is to be realized.
+2. The new agenda recommends prioritizing creation of powerful, lightweight, and untethered head-worn displays, reduction of visual latencies, standardization of symptom and aftereffect measurement, development of improved countermeasures, and improved understanding of the magnitude of the problem and its implications for job performance.
+3. Cybersickness can linger long after XR exposure and compromise postural stability, hand-eye coordination, visual functioning, and general well-being.
+4. To discuss potential solutions for cybersickness, a special session was held at the 1997 Human Computer Interaction (HCI) International Conference.
+5. This paper engages the participants from that workshop in formulating an updated R&D agenda, three of whom participated in the development of the original 1998 agenda.
+6. Cybersickness incidence estimates imply that early VR headsets (available ca. 1994–2010) elicited adverse symptoms among >60% of users during their first exposure, with 40–100% being deemed motion sick.
+7. While XR systems have begun proliferating worldwide due to their affordability, cybersickness was still observed shortly after the introduction of the latest generation of VR headsets, such as the Oculus Rift.
+8. The introduction of these headsets addressed some of the headset-related recommendations from the Stanney et al. (1998) R&D agenda by creating bright, low-cost head-worn displays (HWDs).
+9. What can we conclude about the incidence of cybersickness in newer XR?
+10. While cybersickness still occurs in the present generation of VR headsets, there is very limited evidence in the literature to enable one to discern whether the incidence of cybersickness has changed versus previous generations.
+11. At least one-third of users will experience discomfort during VR usage; d) AR usage may be less problematic but more research is needed to back this assertion; e) At least 5% of XR users are expected to experience severe symptoms in the latest generation headsets.
+12. The Oculus Rift VR headset such as that used by Davis et al. is not expected to fit, on average, 16% of females and 1% of males based on its interpupillary distance (IPD) range of adjustment, while the Oculus Quest will not fit 7% of females and 1% of males.
+13. This IPD fit/no-fit variable, when incorporated into a predictive model of cybersickness, was found to be the primary driver of cybersickness recovery time, with a secondary driver being motion sickness history.
+14. Based on these findings and considerations, recommendations from the Stanney et al. (1998) R&D agenda that should be maintained include: Determine the various drivers of cybersickness and create a predictive model.
+15. There is a general belief that AR HWDs will not have the same level of physiological adverse impact on users compared to VR; however, there are limited data to back this assertion.
+16. The evidence available comes from Vovk, Wild, Guest, and Kuula (2018), who claimed AR engenders negligible cybersickness, yet they excluded a relatively large number (>15%) of outliers in their data.
+17. Based on these findings, important considerations that were part of the Stanney et al. (1998) R&D agenda that should be maintained include: Standardize subjective and objective measurement of aftereffects.
+18. The Stanney et al. (1998) R&D agenda identified the need to develop a better theoretical understanding of cybersickness in terms of sensory discordance and human adaptation timelines.
+19. The sensory conflict hypothesis of motion sickness attributes cybersickness to conflicts between expected sensory cues established through previous experiences and those currently being experienced in a novel environment.
+20. This range of cybersickness susceptibility suggests that there are other characteristics that also vary among individuals and relate to cybersickness.
+21. The critical question, however, is whether these differences in sensitivity relate to and predict differences in cybersickness.
+22. The video footage was intended to be sickness-inducing to allow for a range of sickness across individuals.
+23. The results suggest possible solutions. Ideas for cybersickness mitigation are summarized in Table 2, based upon the implications from a variety of theoretical approaches to the problem, which are described in this paper, including sensory/cue conflict, the evolutionary hypothesis, the ecological hypothesis, and the multisensory re-weighting hypothesis.
+24. The evolutionary hypothesis implies that the brain recognizes certain sensorimotor conflicts as toxins that must be expelled.
+25. Thus, cybersickness is not predicted as a result of all intersensory conflict conditions.
+26. The postural instability hypothesis suggests that a postural precursor of motion sickness is a parameter of postural activity that differs between individuals who (later) report being well versus sick.
+27. The implication of these vast individual differences is that, while some people may be able to fully embrace the power and potential of XR technology, those who are highly susceptible may be left on the sidelines watching this new era of XR-empowered productivity and entertainment pass them by.
+28. This could have future effects on career opportunities and progression.
+29. The negative symptoms associated with cybersickness are most often quantified through surveys and questionnaires, such as the SSQ (Kennedy et al., 1993).
+30. Despite possible benefits of using XR training and operational support in workforce-related applications within the military and beyond, the strong likelihood of susceptible individuals experiencing cybersickness remains a significant concern.
+31. The updated R&D agenda presented herein is intended to be a step toward such resolution.
+32. The authors argue for extensive research (priority 1 – urgent and immediate resolution needed) to create powerful, lightweight, and untethered AR/VR HWDs, reduce visual latencies, standardize subjective and objective measurement of aftereffects, with online measurement integrated into HWDs considered ideal, and develop an understanding of the magnitude of the cybersickness problem and its implications to job performance and career progression.
+
+These sentences highlight various aspects of cybersickness, including its implications, causes, and the need for further research and solutions.
