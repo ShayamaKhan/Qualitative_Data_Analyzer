@@ -73,8 +73,8 @@ def classify_tone_of_sentence(sentence, author_sentence, client):
 
 
 # Hardcoded PDF file and keyword
-pdf = "Identifying Causes of and Solutions for Cybersickness in Immersive Technology Reformulation of a Research and Development Agenda.pdf"
-keyword = "cybersickness"
+pdf = "PDF 1"
+keyword = "Gender"
 
 # Extract text from the PDF (or load from cache)
 if not os.path.exists("text1.txt"):
