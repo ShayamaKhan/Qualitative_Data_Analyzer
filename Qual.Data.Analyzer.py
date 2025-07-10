@@ -1,34 +1,15 @@
-import os
-from tkinter import Tk, filedialog, simpledialog
-import PyPDF2
-import re
-import pdfplumber
+# Updated Code 
+import os # Handle files and regular expressions.
+import re # Handle files and regular expressions.
+import pdfplumber # Extract text from PDF files.
+import nltk # Natural Language Toolkit for text processing.
+from openai import OpenAI  # OpenAI client for API calls.
+from keys import open_ai_api_key # Import your OpenAI API key from a separate file.
 
-def select_pdfs():
-    """Open a file dialog to select one or more PDF files."""
-    root = Tk()
-    root.withdraw()  # Hide the main window
-    file_paths = filedialog.askopenfilenames(
-        title="Select PDF files",
-        filetypes=[("PDF Files", "*.pdf")]
-    )
-    return list(file_paths)
+nltk.download('punkt') # Download the punkt tokenizer for sentence tokenization.
+from nltk.tokenize import sent_tokenize # Tokenize text into sentences.
 
-def get_keyword():
-    """Prompt the user to enter a keyword."""
-    root = Tk()
-    root.withdraw()
-    keyword = simpledialog.askstring("Keyword", "Enter the keyword to search for:")
-    return keyword
-
-def find_sentences_with_keyword(text, keyword):
-    """Return all sentences containing the keyword as a paragraph."""
-    # Split text into sentences (simple split by . ! ?)
-    sentences = re.split(r'(?<=[.!?])\s+', text)
-    # Find sentences with the keyword (case-insensitive)
-    matches = [s for s in sentences if keyword.lower() in s.lower()]
-    # Join them as a paragraph
-    return " ".join(matches)
+client = OpenAI(api_key=open_ai_api_key) # Set up the OpenAI client with your API key
 
 def extract_text_pdfplumber(pdf_path):
     """Extract text from PDF using pdfplumber."""
@@ -38,68 +19,87 @@ def extract_text_pdfplumber(pdf_path):
             text += page.extract_text() or ""
     return text
 
-def clean_sentence(sentence):
-    # Remove extra spaces
-    sentence = re.sub(r'\s+', ' ', sentence).strip()
-    # Skip lines that look like references or DOIs
-    if 'doi:' in sentence.lower():
-        return None
-    # Skip lines that are too short
-    if len(sentence.split()) < 5:
-        return None
-    return sentence
+def find_sentences_with_keyword_AI(text, keyword, client): 
+    """
+    Uses OpenAI's GPT model to extract all sentences containing the keyword from the provided text.
+    """
+    prompt = "".join([
+        f"Extract all sentences from the following text that contain the keyword: {keyword}\n\n",
+        "Text:\n",
+        text])
+    
+    response = client.responses.create(
+        model="gpt-4o-mini",
+        instructions="You are a helpful library assistant",
+        input=prompt,
+        temperature=0
+    )
+    return response.output_text 
 
-def read_pdfs_and_find_keyword(pdf_paths, keyword):
-    """Read each PDF and print cleaned sentences containing the keyword, one per line, with tone.
-       Also, summarize the most common tone at the end."""
-    tone_counts = {"Impact": 0, "No Impact": 0, "Conflicted": 0, "Uncertain": 0}
-    for path in pdf_paths:
-        print(f"\nSearching in: {os.path.basename(path)}")
-        text = extract_text_pdfplumber(path)
-        sentences = re.split(r'(?<=[.!?])\s+', text)
-        matches = [s for s in sentences if keyword.lower() in s.lower()]
-        cleaned = [clean_sentence(s) for s in matches]
-        cleaned = [s for s in cleaned if s]  # Remove None values
-        if cleaned:
-            print(f"Sentences with '{keyword}':")
-            for sentence in cleaned:
-                tone = analyze_tone(sentence)
-                tone_counts[tone] += 1
-                print(f"{sentence}\nTone: {tone}\n")
-        else:
-            print(f"No sentences found with '{keyword}'.\n")
-    # Print summary
-    print("Tone summary:")
-    for tone, count in tone_counts.items():
-        print(f"{tone}: {count}")
-    # Final thought
-    most_common = max(tone_counts, key=tone_counts.get)
-    print(f"\nFinal thought: The most common opinion is '{most_common}'.")
+def clean_pdf_text(text):
+    # Fix hyphenated line breaks
+    text = re.sub(r'(\w+)\s*-\s*\n\s*(\w+)', r'\1\2', text)
+    text = text.replace('al.', 'al')
+    # Remove HTML entities
+    text = re.sub(r'&[a-z]+;', '', text)
+    # Replace all remaining newlines with spaces
+    text = text.replace('\n', ' ')
+    # Normalize whitespace
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
 
-def analyze_tone(sentence):
-    """Classify the sentence tone regarding sex and cybersickness."""
-    s = sentence.lower()
-    if any(phrase in s for phrase in [
-        "no sex difference", "no effect of sex", "sex was not a factor", "sex differences were not found"
-    ]):
-        return "No Impact"
-    if any(phrase in s for phrase in [
-        "sex difference", "sex differences were found", "sex is a predictor", "sex has an impact"
-    ]):
-        return "Impact"
-    if any(phrase in s for phrase in [
-        "mixed results", "conflicting", "inconclusive", "unclear", "not clear"
-    ]):
-        return "Conflicted"
-    return "Uncertain"
+def classify_tone_of_sentence(sentence, author_sentence, client):
+    """
+    Uses OpenAI to classify the tone of a sentence with respect to an author statement.
+    """
+    prompt = "".join([
+        f"Classify the tone of the following sentence with respect to the statement: {author_sentence}\n\n",
+        "There are three possible tones:\n",
+        "1. Supportive: The sentence affirms or supports the presence of an effect, relationship, or influence of the keyword. assert or affirm the presence of an effect, relationship, or influence of the keyword on cybersickness. This tone often suggests that the factor matters, has a notable impact, or is a key contributor. Keywords include: significant, critical, affects, influences, predicts, correlated with, plays a role, associated with, linked to, worsens, improves, highly sensitive to, strong relationship, results indicate, was found to contribute, etc\n\n",
+        "2. Neutral: The sentence mentions the keyword without taking a stance. Keywords include: measured, included, collected, considered, recorded, examined, controlled for, reported\n\n",
+        "3. Opposing: indicates that no effect was found, no significant relationship, or even contradictory evidence between the keyword and cybersickness. The tone suggests the factor does not matter, is inconclusive, or shows inconsistent findings and uses negative phrases such as no significant, not related, was not found, did not affect, no difference, not associated, no clear pattern, mixed results, results were inconclusive, failed to show, inconsistent findings\n",
+        sentence,
+        "\n\nRespond with: Supportive, Neutral, or Opposing, and explain why."
+    ])
 
-if __name__ == "__main__":
-    pdf_files = select_pdfs()
-    if pdf_files:
-        keyword = get_keyword()
-        if keyword:
-            read_pdfs_and_find_keyword(pdf_files, keyword)
-        else:
-            print("No keyword entered.")
-    else:
-        print("No PDF files selected.")
+    response = client.responses.create(
+        model="gpt-4o",
+        instructions="You are a helpful academic tone analysis assistant.",
+        input=prompt,
+        temperature=0
+    )
+
+    return response.output_text.strip()
+
+
+# Hardcoded PDF file and keyword
+pdf = "Identifying Causes of and Solutions for Cybersickness in Immersive Technology Reformulation of a Research and Development Agenda.pdf"
+keyword = "cybersickness"
+
+# Extract text from the PDF (or load from cache)
+if not os.path.exists("text1.txt"):
+    text1 = extract_text_pdfplumber(pdf)
+    with open("text1.txt", "w", encoding="utf-8") as f:
+        f.write(text1)
+else:
+    with open("text1.txt", "r", encoding="utf-8") as f:
+        text1 = f.read()
+
+# Use OpenAI to find sentences with the keyword in the extracted text
+keyword_sentences = find_sentences_with_keyword_AI(text1, keyword, client)
+
+# Clean and split the AI-extracted sentences
+cleaned = clean_pdf_text(keyword_sentences)
+sentences = sent_tokenize(cleaned)
+
+# Author's statement for tone analysis
+author_sentence = "gender has an impact on the level of cybersickness experienced by users of immersive technology"
+
+# Save sentences with tone analysis to a file
+with open("sentences_with_tone.txt", "w", encoding="utf-8") as f:
+    for i, sentence in enumerate(sentences):
+        print(f"Sentence {i+1}: {sentence}", file=f)
+        tone = classify_tone_of_sentence(sentence, author_sentence, client)
+        print(tone, "\n", file=f)
+        print(f"Sentence {i+1}: {sentence}")
+        print(tone, "\n")
