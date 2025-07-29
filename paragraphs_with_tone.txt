@@ -7,7 +7,7 @@
 Many potential factors contribute to simulation sickness in virtual environments, such as age, gender, calibration, experience, and application type. P.J Costello [5] has tabulated many of these factors based on the individual, simulator type, and task performed. These factors have a profound impact on the severity of cybersickness. The factors affecting virtual reality are classified according to user, design, display types, and type of VR content. Table 4 provides an overview of some of the factors that contribute to simulation sickness.
 **Tone:** Neutral. 
 
-The paragraph lists gender as one of several potential factors contributing to cybersickness but does not specifically affirm or deny its impact. It mentions gender alongside other factors like age and experience without providing any specific evidence or argument about its influence. The tone remains neutral as it does not take a stance on whether gender has a significant impact on cybersickness.
+The paragraph mentions gender as one of the many potential factors contributing to cybersickness but does not specifically affirm or deny its impact. It lists gender alongside other factors like age, calibration, experience, and application type without taking a stance on the specific influence of gender. The paragraph remains descriptive and does not provide evidence or argumentation to support or oppose the impact of gender on cybersickness.
 
 ------------------------------------------------------------
 
@@ -18,7 +18,7 @@ The paragraph lists gender as one of several potential factors contributing to c
 Simulation sickness may vary according to gender with the use of HMDs. Schafer et al. [41] studied the role of gender, technology, and their potential contribution towards simulation sickness. Using the data obtained from about 223 individuals (108 male and 115 female), they examined the levels of simulation sickness with regards to gender, sensory conflict, and improvements in VR technology. They concluded that women experienced a higher level of simulation sickness compared to men. Stanney et al. [42] conducted multiple experiments and found that females were equally susceptible to motion sickness, and it was due to the improper fit of the VR headset to inter-pupillary distance (distance between the center of one’s eyes). They also suggest a redesign to the VR headsets with alterable inter-pupillary distance to reduce the cybersickness in women.
 **Tone:** Supportive. 
 
-The paragraph provides evidence that gender has an impact on the level of cybersickness experienced by users of immersive technology. It cites studies by Schafer et al. and Stanney et al., both of which conclude that women experience higher levels of simulation sickness compared to men. The paragraph also discusses specific factors, such as the improper fit of VR headsets, that contribute to this difference, further supporting the idea that gender influences cybersickness.
+The paragraph provides evidence that gender has an impact on the level of cybersickness experienced by users of immersive technology. It cites studies by Schafer et al. and Stanney et al., both of which found that women experience higher levels of simulation sickness compared to men. The paragraph also discusses specific factors, such as the improper fit of VR headsets, that contribute to this difference, further supporting the idea that gender influences cybersickness.
 
 ------------------------------------------------------------
 
@@ -59,9 +59,7 @@ Realistic graphic content can cause more simulation sickness.
 Field of view  
 Altering the FOV minimizes user discomfort.  
 [2,8]
-**Tone:** Supportive.
-
-The paragraph explicitly states that "Females are more prone to motion sickness than Males," which directly supports the statement that gender has an impact on the level of cybersickness experienced by users of immersive technology. The inclusion of references [41,42] further indicates that this assertion is backed by research, reinforcing the supportive tone regarding the influence of gender on cybersickness.
+**Tone:** Supportive. The paragraph explicitly states that "Females are more prone to motion sickness than Males," which supports the idea that gender has an impact on the level of cybersickness experienced by users of immersive technology. This statement, along with the references provided, indicates a supportive tone regarding the influence of gender on cybersickness.
 
 ------------------------------------------------------------
 
