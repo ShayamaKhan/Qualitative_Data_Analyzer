@@ -13,6 +13,26 @@ client = OpenAI(api_key=open_ai_api_key)
 # ----------- Paragraph Extraction -----------
 
 def extract_paragraphs(text, client):
+    """
+    Extracts paragraphs from text using OpenAI API.
+    
+    Uses AI to intelligently split raw text into meaningful paragraphs
+    by streaming responses and parsing paragraph markers.
+    
+    Args:
+        text (str): Raw text extracted from PDF
+        client (OpenAI): Initialized OpenAI client for API calls
+    
+    Returns:
+        list: List of extracted paragraph strings
+    
+    Example:
+        >>> client = OpenAI(api_key="your-key")
+        >>> text = "First paragraph. Second paragraph."
+        >>> paragraphs = extract_paragraphs(text, client)
+        >>> print(len(paragraphs))
+        2
+    """
     prompt = (
         "Split the following text into paragraphs. "
         "After each paragraph, output the marker <P>.\n\n"
@@ -44,6 +64,31 @@ def extract_paragraphs(text, client):
 # ----------- Tone Classification -----------
 
 def classify_tone(paragraph, keyword, client):
+    """
+    Classifies the tone of a paragraph regarding a specific keyword.
+    
+    Uses OpenAI's GPT-4o model to analyze the sentiment and stance of a paragraph
+    in relation to a given keyword, categorizing it as Supportive, Neutral, or Opposing.
+    
+    Args:
+        paragraph (str): Text paragraph to analyze for tone
+        keyword (str): Target keyword to analyze tone for
+        client (OpenAI): OpenAI client instance for API calls
+    
+    Returns:
+        str: Tone classification with explanation in format:
+             "Supportive/Neutral/Opposing: explanation text"
+    
+    Raises:
+        Exception: If OpenAI API call fails
+    
+    Example:
+        >>> paragraph = "VR technology reduces motion sickness significantly."
+        >>> keyword = "motion sickness"
+        >>> result = classify_tone(paragraph, keyword, client)
+        >>> print(result)
+        "Supportive: The paragraph indicates VR reduces motion sickness."
+    """
     prompt = (
         f"Classify the tone of the following paragraph with respect to the keyword: {keyword}\n\n"
         "There are three possible tones:\n"
@@ -66,6 +111,38 @@ def classify_tone(paragraph, keyword, client):
 # ----------- Main Execution -----------
 
 def run_analysis(pdf_path, keywords):
+    """
+    Main analysis pipeline that processes PDF and generates results.
+    
+    Orchestrates the complete analysis workflow: extracts text from PDF,
+    segments into paragraphs, analyzes tone for each keyword, calculates
+    scores, and generates formatted Excel output.
+    
+    Args:
+        pdf_path (str): Absolute path to the input PDF file
+        keywords (list): List of keywords to analyze in the document
+    
+    Returns:
+        None: Results are saved directly to 'factor_analysis_results.xlsx'
+    
+    Raises:
+        Exception: If PDF cannot be opened or processed
+        Exception: If OpenAI API calls fail
+        Exception: If Excel file cannot be created
+    
+    Process Flow:
+        1. Extract text from all PDF pages
+        2. Split text into paragraphs using AI
+        3. Filter paragraphs containing each keyword
+        4. Classify tone for each relevant paragraph
+        5. Calculate scores and cumulative metrics
+        6. Generate formatted Excel output with styling
+    
+    Example:
+        >>> keywords = ["cybersickness", "VR", "motion sickness"]
+        >>> run_analysis("research_paper.pdf", keywords)
+        # Creates factor_analysis_results.xlsx with analysis
+    """
     print("Starting analysis...")  # Add this
     doc = fitz.open(pdf_path)
     all_paragraphs = []
@@ -217,10 +294,50 @@ def run_analysis(pdf_path, keywords):
 # --- GUI code ---
 
 def browse_pdf():
+    """
+    Opens file dialog for PDF selection and updates the GUI variable.
+    
+    Uses tkinter's filedialog to allow user to browse and select a PDF file.
+    The selected file path is stored in the pdf_path_var StringVar for use
+    in the analysis.
+    
+    Returns:
+        None: Updates pdf_path_var with selected file path
+    
+    GUI Integration:
+        - Triggered by "Browse" button click
+        - Filters to show only PDF files (*.pdf)
+        - Updates the PDF path entry field in real-time
+    """
     filename = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf")])
     pdf_path_var.set(filename)
 
 def start_analysis():
+    """
+    Initiates the analysis process from GUI inputs with validation and error handling.
+    
+    Retrieves user inputs from GUI fields, validates them, and executes the main
+    analysis pipeline. Displays success or error messages to the user via messageboxes.
+    
+    Returns:
+        None: Shows messagebox with results or error information
+    
+    Validation:
+        - Ensures PDF path is provided
+        - Ensures at least one keyword is entered
+        - Validates keywords are properly comma-separated
+    
+    Error Handling:
+        - Catches and displays API errors
+        - Handles file access issues
+        - Shows user-friendly error messages
+    
+    GUI Integration:
+        - Triggered by "Run Analysis" button click
+        - Reads from pdf_path_var and keywords_var
+        - Shows progress via console prints
+        - Displays completion dialog when finished
+    """
     pdf_path = pdf_path_var.get()
     keywords = [k.strip() for k in keywords_var.get().split(",") if k.strip()]
     if not pdf_path or not keywords:
