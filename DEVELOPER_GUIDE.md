@@ -83,7 +83,6 @@ The Qualitative Data Analyzer is a Python-based desktop application that uses AI
 ```
 Qualitative_Data_Analyzer/
 ├── main.py                 # Main application entry point
-├── keys.py                 # API keys (not tracked in git)
 ├── keys.py.template.py     # Template for API keys
 ├── requirements.txt        # Python dependencies
 ├── README.md              # User guide
