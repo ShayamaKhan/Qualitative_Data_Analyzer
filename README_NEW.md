@@ -76,66 +76,47 @@ pip3 install -r requirements.txt
    open_ai_api_key = "sk-proj-your-actual-api-key-here"
    ```
 
-   **Example with a real key format:**
-   ```python
-   open_ai_api_key = "sk-proj-abc123def456ghi789jkl012mno345pqr678stu901vwx234yzA"
-   ```
-
 ⚠️ **Security Note**: Never share your API key or commit the `keys.py` file to GitHub!
 
-### Step 4: Test Your Installation
-Run the application to make sure everything works:
-
-**Windows:**
-```bash
-python main.py
-```
-
-**Mac/Linux:**
-```bash
-python3 main.py
-```
-
-If successful, you should see a window like this:
-
-<img width="589" height="177" alt="Application GUI" src="https://github.com/user-attachments/assets/de96cc79-5d02-4219-b199-4753a133dfd5" />
 
 ## How to Use
 
 ### Step 1: Prepare Your PDF
 - Make sure your PDF contains searchable text (not just scanned images)
-- The PDF should be in English for best results
-- Academic papers work best, but any text-based PDF will work
+- The PDF should be in English
 
 ### Step 2: Launch the Application
-Run `python main.py` (or `python3 main.py` on Mac/Linux)
+Run `python main.py`  
 
-### Step 3: Select Your PDF File
+<img width="795" height="208" alt="Analysis running" src="https://github.com/user-attachments/assets/bd012732-248a-4263-9bc0-27eaf74abf6a" />  
+
+When successful, you should see a window like this:  
+
+<img width="589" height="177" alt="Application GUI" src="https://github.com/user-attachments/assets/de96cc79-5d02-4219-b199-4753a133dfd5" />
+
+### Step 3: Select Your PDF File and Enter Your Keywords
 1. Click the **"Browse"** button
 2. Navigate to your PDF file and select it
 3. The file path will appear in the text field
-
-<img width="595" height="176" alt="File selection interface" src="https://github.com/user-attachments/assets/fa6a73ce-7938-4f34-b723-73e6c3dcaa40" />
-
-### Step 4: Enter Your Keywords
-1. In the "Keywords" field, enter the terms you want to analyze
-2. **Separate multiple keywords with commas**
-3. Examples:
+4. In the "Keywords" field, enter the terms you want to analyze
+5. **Separate multiple keywords with commas**  
+Examples:
    - `cybersickness, motion sickness, VR`
    - `gender, age, latency`
    - `virtual reality, augmented reality, mixed reality`
 
-### Step 5: Run the Analysis
+<img width="595" height="176" alt="File selection interface" src="https://github.com/user-attachments/assets/fa6a73ce-7938-4f34-b723-73e6c3dcaa40" />
+
+### Step 4: Run the Analysis
 1. Click **"Run Analysis"**
-2. The application will show progress in the terminal/command window
-3. Processing time depends on PDF size (typically 1-5 minutes)
-4. You'll see a success message when complete
+2. Processing time depends on PDF size (typically 1-5 minutes)
+3. You'll see a success message when complete
 
-<img width="795" height="208" alt="Analysis running" src="https://github.com/user-attachments/assets/bd012732-248a-4263-9bc0-27eaf74abf6a" />
+<img width="545" height="222" alt="image" src="https://github.com/user-attachments/assets/eb7f2e59-723e-497f-874e-a430e927f094" />
 
-### Step 6: View Your Results
+### Step 5: View Your Results
 1. Look for `factor_analysis_results.xlsx` in your project folder
-2. Open it with Excel, Google Sheets, or any spreadsheet application
+2. Open it with Excel 
 3. Review the analysis for each keyword
 
 <img width="806" height="251" alt="Excel results" src="https://github.com/user-attachments/assets/7560e7a2-ed8e-42f6-9d4a-2b49f422440d" />
@@ -198,7 +179,7 @@ The Excel file contains these columns:
 ### Current Limitations:
 - **English only**: Works best with English-language PDFs
 - **Internet required**: Needs connection for AI processing  
-- **API costs**: Each analysis uses OpenAI credits (typically $0.10-$2.00)
+- **API costs**: Each analysis uses OpenAI credits 
 - **Processing time**: Large PDFs may take 5-10 minutes
 - **Text-based PDFs only**: Cannot analyze image-only or scanned documents
 
@@ -231,10 +212,4 @@ The Excel file contains these columns:
 - See [DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md) for code documentation
 - Contributions welcome via pull requests
 
----
-
-**Need more help?** Open an issue on this repository with:
-- Your operating system
-- Python version (`python --version`)
-- Error messages (if any)
-- Steps you've already tried
+ 
