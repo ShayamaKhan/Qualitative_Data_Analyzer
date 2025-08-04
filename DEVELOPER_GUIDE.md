@@ -148,11 +148,11 @@ def classify_tone(paragraph, keyword, client):
 ```python
 def run_analysis(pdf_path, keywords):
     """
-    Main analysis pipeline that processes PDF and generates results.
+    The main analysis pipeline that processes PDF and generates results.
     
     Args:
         pdf_path (str): Path to input PDF file
-        keywords (list): List of keywords to analyze
+        Keywords (list): List of keywords to analyze
     """
 ```
 
@@ -160,7 +160,7 @@ def run_analysis(pdf_path, keywords):
 1. Extract text from PDF using PyMuPDF
 2. Split text into paragraphs using AI
 3. Filter paragraphs containing keywords
-4. Classify tone for each relevant paragraph
+4. Classify the tone for each relevant paragraph
 5. Calculate scores and cumulative metrics
 6. Generate formatted Excel output
 
@@ -168,7 +168,7 @@ def run_analysis(pdf_path, keywords):
 ```python
 def save_to_excel(excel_rows, output_excel, row_ranges):
     """
-    Creates formatted Excel file with analysis results.
+    Creates a formatted Excel file with analysis results.
     
     Args:
         excel_rows (list): Data rows for Excel
@@ -178,7 +178,7 @@ def save_to_excel(excel_rows, output_excel, row_ranges):
 ```
 
 **Excel Features:**
-- Styled headers with blue background
+- Styled headers with a blue background
 - Bordered cells for better readability
 - Automatic column width adjustment
 - Conditional formatting for different tones
@@ -197,7 +197,7 @@ client = OpenAI(api_key=open_ai_api_key)
 ```
 
 **Security Best Practices:**
-- API keys stored in separate `keys.py` file
+- API keys stored in a separate `keys.py` file
 - `keys.py` added to `.gitignore`
 - Template file provided for easy setup
 
@@ -227,7 +227,7 @@ open_ai_api_key = "your_openai_api_key_here"
 
 **Setup Instructions:**
 1. Copy template to `keys.py`
-2. Replace placeholder with actual API key
+2. Replace the placeholder with the actual API key
 3. Ensure `keys.py` is in `.gitignore`
 
 ## Testing
@@ -272,7 +272,7 @@ expected_columns = [
 2. Make changes and test thoroughly
 3. Commit with descriptive messages: `git commit -m "Add: new feature description"`
 4. Push branch: `git push origin feature/new-feature`
-5. Create pull request for review
+5. Create a pull request for review
 
 ### Commit Message Format
 ```
@@ -296,7 +296,7 @@ Detailed explanation of changes (if needed)
 
 #### Example: Adding New Classification Categories
 1. Update `classify_tone()` function prompt
-2. Modify tone scoring system in `run_analysis()`
+2. Modify the tone scoring system in `run_analysis()`
 3. Update Excel formatting if needed
 4. Test with various input scenarios
 5. Update documentation
@@ -321,7 +321,7 @@ tone_score = {
 **Solution**: 
 - Verify API key in `keys.py`
 - Check OpenAI account billing status
-- Ensure API key has correct permissions
+- Ensure the API key has the correct permissions
 
 #### 2. PDF Processing Errors
 **Problem**: Cannot extract text from PDF
@@ -333,15 +333,15 @@ tone_score = {
 #### 3. Excel File Locked
 **Problem**: Cannot save Excel file
 **Solution**:
-- Close Excel file if open
+- Close the Excel file if open
 - Check file permissions
-- Verify output directory is writable
+- Verify the output directory is writable
 
 #### 4. GUI Not Responding
 **Problem**: Interface freezes during analysis
 **Solution**:
 - Large PDFs take time to process
-- Consider adding progress bar for user feedback
+- Consider adding a progress bar for user feedback
 - Check system resources
 
 ### Debug Mode
@@ -401,6 +401,3 @@ For development questions or issues:
 3. Test with sample PDFs
 4. Create GitHub issue with detailed description
 
----
-
-*This developer guide is maintained alongside the codebase. Please update it when making significant changes to the project structure or functionality.*
