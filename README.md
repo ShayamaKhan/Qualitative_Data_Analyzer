@@ -76,56 +76,35 @@ pip3 install -r requirements.txt
    open_ai_api_key = "sk-proj-your-actual-api-key-here"
    ```
 
-   **Example with a real key format:**
-   ```python
-   open_ai_api_key = "sk-proj-abc123def456ghi789jkl012mno345pqr678stu901vwx234yzA"
-   ```
-
 ⚠️ **Security Note**: Never share your API key or commit the `keys.py` file to GitHub!
 
-### Step 4: Test Your Installation
-Run the application to make sure everything works:
-
-**Windows:**
-```bash
-python main.py
-```
-
-**Mac/Linux:**
-```bash
-python3 main.py
-```
-
-If successful, you should see a window like this:
-
-<img width="589" height="177" alt="Application GUI" src="https://github.com/user-attachments/assets/de96cc79-5d02-4219-b199-4753a133dfd5" />
 
 ## How to Use
 
 ### Step 1: Prepare Your PDF
 - Make sure your PDF contains searchable text (not just scanned images)
 - The PDF should be in English for best results
-- Academic papers work best, but any text-based PDF will work
 
 ### Step 2: Launch the Application
 Run `python main.py` (or `python3 main.py` on Mac/Linux)
 
-### Step 3: Select Your PDF File
+When successful, you should see a window like this:
+
+<img width="589" height="177" alt="Application GUI" src="https://github.com/user-attachments/assets/de96cc79-5d02-4219-b199-4753a133dfd5" />
+
+### Step 3: Select Your PDF File and Enter Your Keywords
 1. Click the **"Browse"** button
 2. Navigate to your PDF file and select it
 3. The file path will appear in the text field
-
-<img width="595" height="176" alt="File selection interface" src="https://github.com/user-attachments/assets/fa6a73ce-7938-4f34-b723-73e6c3dcaa40" />
-
-### Step 4: Enter Your Keywords
-1. In the "Keywords" field, enter the terms you want to analyze
-2. **Separate multiple keywords with commas**
-3. Examples:
+4. In the **"Keywords"** field, enter the terms you want to analyze. Separate multiple keywords with commas  
+Examples:
    - `cybersickness, motion sickness, VR`
    - `gender, age, latency`
    - `virtual reality, augmented reality, mixed reality`
+  
+<img width="595" height="176" alt="File selection interface" src="https://github.com/user-attachments/assets/fa6a73ce-7938-4f34-b723-73e6c3dcaa40" />
 
-### Step 5: Run the Analysis
+### Step 4: Run the Analysis
 1. Click **"Run Analysis"**
 2. The application will show progress in the terminal/command window
 3. Processing time depends on PDF size (typically 1-5 minutes)
@@ -133,9 +112,9 @@ Run `python main.py` (or `python3 main.py` on Mac/Linux)
 
 <img width="795" height="208" alt="Analysis running" src="https://github.com/user-attachments/assets/bd012732-248a-4263-9bc0-27eaf74abf6a" />
 
-### Step 6: View Your Results
+### Step 5: View Your Results
 1. Look for `factor_analysis_results.xlsx` in your project folder
-2. Open it with Excel, Google Sheets, or any spreadsheet application
+2. Open it with MS Excel.
 3. Review the analysis for each keyword
 
 <img width="806" height="251" alt="Excel results" src="https://github.com/user-attachments/assets/7560e7a2-ed8e-42f6-9d4a-2b49f422440d" />
@@ -183,7 +162,7 @@ The Excel file contains these columns:
 **Solutions**:
 - Try a different PDF with searchable text
 - Remove password protection from the PDF
-- Use OCR software to convert image-based PDFs to text
+
 
 ### Application freezes or takes too long
 **Problem**: Large PDF or many keywords  
@@ -226,15 +205,4 @@ The Excel file contains these columns:
 1. Check the [Troubleshooting](#common-issues--solutions) section above
 2. Review the [DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md) for technical details
 3. Create an issue on this GitHub repository
-
-### For Development:
-- See [DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md) for code documentation
-- Contributions welcome via pull requests
-
----
-
-**Need more help?** Open an issue on this repository with:
-- Your operating system
-- Python version (`python --version`)
-- Error messages (if any)
-- Steps you've already tried
+ 
