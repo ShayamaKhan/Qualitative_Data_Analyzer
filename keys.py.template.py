@@ -1,5 +1,3 @@
-# Template file for API keys
-# Copy this file to 'keys.py' and replace the placeholder values with your actual API keys
 
 # OpenAI API Key
 # Get your API key from: https://platform.openai.com/api-keys
