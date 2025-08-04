@@ -383,14 +383,12 @@ logging.basicConfig(
 - [ ] Custom tone categories
 - [ ] Progress bar for long operations
 - [ ] Export to different formats (CSV, JSON)
-- [ ] Batch processing capabilities
 - [ ] Advanced filtering options
 
 ### Architecture Improvements
 - [ ] Separate GUI from analysis logic
 - [ ] Add configuration file support
 - [ ] Implement plugin system for new analyzers
-- [ ] Add unit tests
 - [ ] Create web-based interface option
 
 ## Support
