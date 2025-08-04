@@ -88,9 +88,13 @@ pip3 install -r requirements.txt
 ### Step 2: Launch the Application
 Run `python main.py`  
 
-When successful, you should see a window like this:
+<img width="795" height="208" alt="Analysis running" src="https://github.com/user-attachments/assets/bd012732-248a-4263-9bc0-27eaf74abf6a" />  
 
+When successful, you should see a window like this:  
 <img width="589" height="177" alt="Application GUI" src="https://github.com/user-attachments/assets/de96cc79-5d02-4219-b199-4753a133dfd5" />
+
+
+
 
 ### Step 3: Select Your PDF File and Enter Your Keywords
 1. Click the **"Browse"** button
@@ -110,7 +114,7 @@ Examples:
 3. Processing time depends on PDF size (typically 1-5 minutes)
 4. You'll see a success message when complete
 
-<img width="795" height="208" alt="Analysis running" src="https://github.com/user-attachments/assets/bd012732-248a-4263-9bc0-27eaf74abf6a" />
+<img width="539" height="217" alt="image" src="https://github.com/user-attachments/assets/5c6bd0d3-bcdd-422b-98da-de2401394f1c" />
 
 ### Step 5: View Your Results
 1. Look for `factor_analysis_results.xlsx` in your project folder
