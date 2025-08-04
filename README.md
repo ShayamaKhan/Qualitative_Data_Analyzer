@@ -86,7 +86,7 @@ pip3 install -r requirements.txt
 - The PDF should be in English for best results
 
 ### Step 2: Launch the Application
-Run `python main.py` (or `python3 main.py` on Mac/Linux)
+Run `python main.py`  
 
 When successful, you should see a window like this:
 
