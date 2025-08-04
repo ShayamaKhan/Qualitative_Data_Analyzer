@@ -23,19 +23,25 @@ openai
 
 
 ## How to run?
+1. **Clone or download the project folder to your computer** 
+2. **Open a terminal (Command Prompt or PowerShell on Windows, Terminal on Mac)**   
+3. **Navigate to your project folder**  
 
-1. **Install Python packages**  
+4. **Install Python packages**  
 
-2. **Set up your OpenAI API key**  
-You can get your API key by signing up at [OpenAI](https://platform.openai.com/) and creating a new key in your account dashboard.
-Never share your API key publicly.
+5. **Set up your OpenAI API key**  
+Copy keys.py.template to keys.py   
+Edit keys.py and add your API key
 
-4. **Start the application**  
+    You can get your API key by signing up at [OpenAI](https://platform.openai.com/) and creating a new key in your account dashboard.    
+    Important: Never share your API key publicly or commit it to GitHub.  
+
+7. **Start the application**  
 Use the main.py file
 <img width="795" height="208" alt="image" src="https://github.com/user-attachments/assets/bd012732-248a-4263-9bc0-27eaf74abf6a" />
 
 
-6. **Use the graphical window**
+8. **Use the graphical window**
 <img width="589" height="177" alt="image" src="https://github.com/user-attachments/assets/de96cc79-5d02-4219-b199-4753a133dfd5" />
 <img width="595" height="176" alt="image" src="https://github.com/user-attachments/assets/fa6a73ce-7938-4f34-b723-73e6c3dcaa40" />
 
@@ -44,7 +50,7 @@ Click Browse to select your PDF file.
 Enter keywords (comma-separated, e.g. gender, age, latency).  
 Click Run Analysis.
 
-5. **View results**
+8. **View results**
 <img width="539" height="227" alt="image" src="https://github.com/user-attachments/assets/d39d55ae-c555-4ec1-b8bc-4d09d7539c34" />
 <img width="806" height="251" alt="image" src="https://github.com/user-attachments/assets/7560e7a2-ed8e-42f6-9d4a-2b49f422440d" />
 
@@ -54,4 +60,8 @@ Open this file in Excel to view the analysis.
 ## Troubleshooting
 1. Excel file won’t update: Close factor_analysis_results.xlsx before running the analysis.
 2. API errors: Check your API key in keys.py.
- 
+
+## Limitations
+Only works with English-language PDFs.  
+Large PDFs may take longer to process.  
+Designed specifically for cybersickness literature review analysis.
