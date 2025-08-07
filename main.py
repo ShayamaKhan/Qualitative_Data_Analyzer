@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import filedialog, messagebox
+from tkinter import filedialog, messagebox, scrolledtext
 import os
 import fitz
 import pandas as pd
@@ -110,7 +110,7 @@ def classify_tone(paragraph, keyword, client):
 
 # ----------- Main Execution -----------
 
-def run_analysis(pdf_path, keywords):
+def run_analysis(pdf_path, keywords, output_path, status_text):
     """
     Main analysis pipeline that processes PDF and generates results.
     
@@ -121,9 +121,11 @@ def run_analysis(pdf_path, keywords):
     Args:
         pdf_path (str): Absolute path to the input PDF file
         keywords (list): List of keywords to analyze in the document
+        output_path (str): Path where to save the output Excel file
+        status_text (ScrolledText): Widget to display status updates
     
     Returns:
-        None: Results are saved directly to 'factor_analysis_results.xlsx'
+        None: Results are saved directly to the specified output path
     
     Raises:
         Exception: If PDF cannot be opened or processed
@@ -140,17 +142,23 @@ def run_analysis(pdf_path, keywords):
     
     Example:
         >>> keywords = ["cybersickness", "VR", "motion sickness"]
-        >>> run_analysis("research_paper.pdf", keywords)
-        # Creates factor_analysis_results.xlsx with analysis
+        >>> run_analysis("research_paper.pdf", keywords, "results.xlsx", status_widget)
+        # Creates results.xlsx with analysis
     """
-    print("Starting analysis...")  # Add this
+    def update_status(message):
+        """Helper function to update status in GUI"""
+        status_text.insert(tk.END, message + "\n")
+        status_text.see(tk.END)
+        status_text.update()
+    
+    update_status("Starting analysis...")
     doc = fitz.open(pdf_path)
     all_paragraphs = []
     for page in doc:
         page_text = page.get_text("text")
         paragraphs = extract_paragraphs(page_text, client)
         all_paragraphs.extend(paragraphs)
-    print(f"Extracted {len(all_paragraphs)} paragraphs.")  # Add this
+    update_status(f"Extracted {len(all_paragraphs)} paragraphs.")
 
     tone_score = {"Supportive": 1, "Neutral": 0, "Opposing": -1}
     excel_rows = []
@@ -158,6 +166,7 @@ def run_analysis(pdf_path, keywords):
     row_ranges = []
 
     for keyword in keywords:
+        update_status(f"Processing keyword: {keyword}")
         keyword_paragraphs = [p for p in all_paragraphs if keyword.lower() in p.lower()]
         scores = []
         start_row = len(excel_rows) + 1  # +1 for header (Excel is 1-based)
@@ -178,6 +187,7 @@ def run_analysis(pdf_path, keywords):
             overall_tones.append("Not Discussed")
             continue
         for i, para in enumerate(keyword_paragraphs):
+            update_status(f"Analyzing paragraph {i+1} of {len(keyword_paragraphs)} for '{keyword}'")
             tone_full = classify_tone(para, keyword, client)
             if "." in tone_full:
                 tone, explanation = tone_full.split(".", 1)
@@ -230,21 +240,21 @@ def run_analysis(pdf_path, keywords):
             "Overall Tone"
         ]
     )
-    output_excel = "factor_analysis_results.xlsx"
-    if os.path.exists(output_excel):
+    
+    if os.path.exists(output_path):
         try:
-            os.remove(output_excel)
-            print("Old Excel file removed.")  # Add this
+            os.remove(output_path)
+            update_status("Removed existing output file.")
         except PermissionError:
-            print("Excel file is open. Cannot overwrite.")  # Add this
+            update_status("Excel file is open. Cannot overwrite.")
             messagebox.showerror(
                 "Error",
-                f"Cannot overwrite '{output_excel}'.\nPlease close the file in Excel and try again."
+                f"Cannot overwrite '{output_path}'.\nPlease close the file in Excel and try again."
             )
             return
-    print("Saving new results to Excel...")  # Add this
-    df.to_excel(output_excel, index=False)
-    wb = openpyxl.load_workbook(output_excel)
+    update_status("Saving results to Excel...")
+    df.to_excel(output_path, index=False)
+    wb = openpyxl.load_workbook(output_path)
     ws = wb.active
 
     # Merge cells ONLY for Overall Tone column (column 8), not for Keyword
@@ -288,81 +298,116 @@ def run_analysis(pdf_path, keywords):
         for cell in row:
             cell.border = border
 
-    wb.save(output_excel)
-    print("Excel file updated successfully.")  # Add this
+    wb.save(output_path)
+    update_status("Excel file saved successfully!")
+    update_status(f"Analysis complete! Results saved to: {output_path}")
 
-# --- GUI code ---
+# --- GUI Functions ---
 
 def browse_pdf():
-    """
-    Opens file dialog for PDF selection and updates the GUI variable.
-    
-    Uses tkinter's filedialog to allow user to browse and select a PDF file.
-    The selected file path is stored in the pdf_path_var StringVar for use
-    in the analysis.
-    
-    Returns:
-        None: Updates pdf_path_var with selected file path
-    
-    GUI Integration:
-        - Triggered by "Browse" button click
-        - Filters to show only PDF files (*.pdf)
-        - Updates the PDF path entry field in real-time
-    """
-    filename = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf")])
-    pdf_path_var.set(filename)
+    """Opens file dialog for PDF selection using askopenfilename()"""
+    filename = filedialog.askopenfilename(
+        title="Select PDF file to analyze",
+        filetypes=[("PDF files", "*.pdf"), ("All files", "*.*")]
+    )
+    if filename:
+        pdf_path_var.set(filename)
+
+def browse_save_location():
+    """Opens file dialog for save location selection using asksaveasfilename()"""
+    filename = filedialog.asksaveasfilename(
+        title="Save Analysis Results As",
+        defaultextension=".xlsx",
+        filetypes=[("Excel files", "*.xlsx"), ("All files", "*.*")],
+        initialfile="qualitative_analysis_results.xlsx"
+    )
+    if filename:
+        output_path_var.set(filename)
 
 def start_analysis():
-    """
-    Initiates the analysis process from GUI inputs with validation and error handling.
-    
-    Retrieves user inputs from GUI fields, validates them, and executes the main
-    analysis pipeline. Displays success or error messages to the user via messageboxes.
-    
-    Returns:
-        None: Shows messagebox with results or error information
-    
-    Validation:
-        - Ensures PDF path is provided
-        - Ensures at least one keyword is entered
-        - Validates keywords are properly comma-separated
-    
-    Error Handling:
-        - Catches and displays API errors
-        - Handles file access issues
-        - Shows user-friendly error messages
-    
-    GUI Integration:
-        - Triggered by "Run Analysis" button click
-        - Reads from pdf_path_var and keywords_var
-        - Shows progress via console prints
-        - Displays completion dialog when finished
-    """
+    """Initiates the analysis process from GUI inputs with validation and error handling."""
     pdf_path = pdf_path_var.get()
-    keywords = [k.strip() for k in keywords_var.get().split(",") if k.strip()]
-    if not pdf_path or not keywords:
-        messagebox.showerror("Error", "Please provide all inputs.")
+    keywords_text = keywords_var.get()
+    output_path = output_path_var.get()
+    
+    # Clear status text
+    status_text.delete(1.0, tk.END)
+    
+    # Validation
+    if not pdf_path:
+        messagebox.showerror("Error", "Please select a PDF file.")
         return
+    
+    # Get keywords list
+    keywords = [k.strip() for k in keywords_text.split(",") if k.strip()]
+    
+    if not keywords:
+        messagebox.showerror("Error", "Please enter at least one keyword.")
+        return
+    
+    # Check if output path is provided
+    if not output_path.strip():
+        messagebox.showerror("Error", "Please select where to save the output file.")
+        return
+    
+    status_text.insert(tk.END, f"Will save results to: {output_path}\n\n")
+    
     try:
-        run_analysis(pdf_path, keywords)
-        messagebox.showinfo("Done", "Analysis complete! Results saved to factor_analysis_results.xlsx")
+        run_analysis(pdf_path, keywords, output_path, status_text)
+        messagebox.showinfo("Analysis Complete", f"Analysis finished successfully!\nResults saved to: {output_path}")
+        # Auto-close the GUI window after showing completion message
+        root.quit()
+        root.destroy()
     except Exception as e:
-        messagebox.showerror("Error", str(e))
+        error_msg = f"An error occurred during analysis:\n{str(e)}"
+        status_text.insert(tk.END, f"ERROR: {str(e)}\n")
+        status_text.see(tk.END)
+        messagebox.showerror("Error", error_msg)
+
+# --- GUI Setup ---
 
 root = tk.Tk()
 root.title("Qualitative Data Analyzer")
+root.geometry("800x600")
 
+# Variables for GUI inputs
 pdf_path_var = tk.StringVar()
 keywords_var = tk.StringVar()
+output_path_var = tk.StringVar()
 
-tk.Label(root, text="PDF File:").grid(row=0, column=0, sticky="e")
-tk.Entry(root, textvariable=pdf_path_var, width=40).grid(row=0, column=1)
-tk.Button(root, text="Browse", command=browse_pdf).grid(row=0, column=2)
+# Row 0: PDF File Selection
+tk.Label(root, text="PDF File:", font=("Arial", 10, "bold")).grid(row=0, column=0, sticky="w", padx=5, pady=5)
+pdf_entry = tk.Entry(root, textvariable=pdf_path_var, width=60)
+pdf_entry.grid(row=0, column=1, padx=5, pady=5, sticky="ew")
+tk.Button(root, text="Browse PDF", command=browse_pdf, width=12).grid(row=0, column=2, padx=5, pady=5)
 
-tk.Label(root, text="Keywords (comma separated):").grid(row=1, column=0, sticky="e")
-tk.Entry(root, textvariable=keywords_var, width=40).grid(row=1, column=1, columnspan=2)
+# Row 1: Keywords Entry
+tk.Label(root, text="Keywords (comma separated):", font=("Arial", 10, "bold")).grid(row=1, column=0, sticky="w", padx=5, pady=5)
+keywords_entry = tk.Entry(root, textvariable=keywords_var, width=60)
+keywords_entry.grid(row=1, column=1, columnspan=2, padx=5, pady=5, sticky="ew")
 
-tk.Button(root, text="Run Analysis", command=start_analysis).grid(row=2, column=1, pady=10)
+# Row 2: Output File Selection
+tk.Label(root, text="Save To:", font=("Arial", 10, "bold")).grid(row=2, column=0, sticky="w", padx=5, pady=5)
+output_entry = tk.Entry(root, textvariable=output_path_var, width=60)
+output_entry.grid(row=2, column=1, padx=5, pady=5, sticky="ew")
+tk.Button(root, text="Select File Location", command=browse_save_location, width=16).grid(row=2, column=2, padx=5, pady=5)
+
+# Row 3: Run Analysis Button
+tk.Button(root, text="Run Analysis", command=start_analysis, 
+          font=("Arial", 12, "bold"), bg="#4CAF50", fg="white", 
+          width=15, height=2).grid(row=3, column=1, pady=20)
+
+# Row 4: Status Text (ScrolledText widget)
+tk.Label(root, text="Status:", font=("Arial", 10, "bold")).grid(row=4, column=0, sticky="nw", padx=5, pady=5)
+status_text = scrolledtext.ScrolledText(root, height=15, width=80, wrap=tk.WORD)
+status_text.grid(row=4, column=1, columnspan=2, padx=5, pady=5, sticky="nsew")
+
+# Configure grid weights for responsive layout
+root.grid_columnconfigure(1, weight=1)
+root.grid_rowconfigure(4, weight=1)
+
+# Add initial message to status
+status_text.insert(tk.END, "Ready to analyze PDF files.\nSelect a PDF file and enter keywords to begin.\nThe Excel file will be created automatically when you run the analysis.\n\n")
 
 root.mainloop()
 
