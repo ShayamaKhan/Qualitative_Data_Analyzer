@@ -91,12 +91,10 @@ Run `python main.py`
 <img width="795" height="208" alt="Analysis running" src="https://github.com/user-attachments/assets/bd012732-248a-4263-9bc0-27eaf74abf6a" />  
 
 When successful, you should see a window like this:  
-<img width="589" height="177" alt="Application GUI" src="https://github.com/user-attachments/assets/de96cc79-5d02-4219-b199-4753a133dfd5" />
+<img width="711" height="548" alt="image" src="https://github.com/user-attachments/assets/73fdf347-7316-4f7d-830e-0f4d9d95a2fb" />
 
 
-
-
-### Step 3: Select Your PDF File and Enter Your Keywords
+### Step 3: Select Your PDF File, Enter Your Keywords, and Select a location to save the output file
 1. Click the **"Browse"** button
 2. Navigate to your PDF file and select it
 3. The file path will appear in the text field
@@ -105,8 +103,11 @@ Examples:
    - `cybersickness, motion sickness, VR`
    - `gender, age, latency`
    - `virtual reality, augmented reality, mixed reality`
+     
+5. **"Save"** the file in a desired location. 
   
-<img width="595" height="176" alt="File selection interface" src="https://github.com/user-attachments/assets/fa6a73ce-7938-4f34-b723-73e6c3dcaa40" />
+<img width="711" height="548" alt="image" src="https://github.com/user-attachments/assets/03c4a901-e2fd-43aa-9c19-084b1f3052e8" />
+
 
 ### Step 4: Run the Analysis
 1. Click **"Run Analysis"**
@@ -114,14 +115,16 @@ Examples:
 3. Processing time depends on PDF size (typically 1-5 minutes)
 4. You'll see a success message when complete
 
-<img width="539" height="217" alt="image" src="https://github.com/user-attachments/assets/5c6bd0d3-bcdd-422b-98da-de2401394f1c" />
+<img width="646" height="483" alt="image" src="https://github.com/user-attachments/assets/d0c1cc3e-b7e1-4fea-a1ec-363719b1fc57" />
 
 ### Step 5: View Your Results
-1. Look for `factor_analysis_results.xlsx` in your project folder
+1. Go to the location and look for the output file
 2. Open it with MS Excel.
 3. Review the analysis for each keyword
 
-<img width="806" height="251" alt="Excel results" src="https://github.com/user-attachments/assets/7560e7a2-ed8e-42f6-9d4a-2b49f422440d" />
+An example of an output file
+<img width="1498" height="844" alt="image" src="https://github.com/user-attachments/assets/df7c97e7-e1c3-46dd-9b6a-91d6902539b0" />
+
 
 ## Understanding Your Results
 
